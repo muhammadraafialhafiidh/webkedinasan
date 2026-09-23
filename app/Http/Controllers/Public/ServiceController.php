@@ -26,7 +26,9 @@ class ServiceController extends Controller
             });
         }
 
-        $services = $query->orderBy('order', 'asc')->get();
+        $services = $query->orderBy(
+            ServiceCategory::select('order')->whereColumn('service_categories.id', 'services.service_category_id')
+        )->orderBy('order', 'asc')->get();
         $selectedCategory = $selectedCategorySlug ? ServiceCategory::where('slug', $selectedCategorySlug)->first() : null;
 
         if ($selectedCategory) {

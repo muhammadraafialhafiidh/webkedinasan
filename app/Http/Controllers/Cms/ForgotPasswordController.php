@@ -5,11 +5,10 @@ namespace App\Http\Controllers\Cms;
 use App\Http\Controllers\Controller;
 use App\Models\ActivityLog;
 use App\Models\User;
-use App\Mail\ResetPasswordMail;
+use App\Services\BrevoMailService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 
@@ -20,7 +19,7 @@ class ForgotPasswordController extends Controller
         return view('auth.forgot-password');
     }
 
-    public function sendResetLink(Request $request)
+    public function sendResetLink(Request $request, BrevoMailService $brevoMailService)
     {
         $request->validate([
             'email' => 'required|email|exists:users,email',
@@ -43,10 +42,10 @@ class ForgotPasswordController extends Controller
 
         $resetUrl = route('cms.reset-password.form', ['token' => $token, 'email' => $request->email]);
 
-        try {
-            Mail::to($user->email)->send(new ResetPasswordMail($resetUrl, $user));
-        } catch (\Exception $e) {
-            Log::error('Gagal mengirim email reset password: ' . $e->getMessage());
+        $mailResult = $brevoMailService->sendPasswordReset($user, $resetUrl, 15);
+
+        if (!$mailResult['success']) {
+            return back()->with('warning', 'Permintaan reset password diproses, namun email instruksi gagal dikirim ke ' . e($user->email) . '. Silakan periksa koneksi atau coba beberapa saat lagi.');
         }
 
         return back()->with('success', 'Link reset password telah berhasil dikirim ke email Anda.');

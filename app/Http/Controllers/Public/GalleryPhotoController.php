@@ -31,6 +31,7 @@ class GalleryPhotoController extends Controller
         $album = GalleryAlbum::with('photos')->findOrFail($id);
 
         $otherAlbums = GalleryAlbum::withCount('photos')
+            ->with('photos')
             ->where('id', '!=', $id)
             ->orderBy('created_at', 'desc')
             ->take(6)

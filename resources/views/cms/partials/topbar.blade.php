@@ -1,7 +1,7 @@
 <header class="cms-topbar d-flex align-items-center justify-content-between px-3 px-md-4 bg-white border-bottom shadow-sm" style="height: var(--topbar-height);">
     <!-- Left Toggle & Breadcrumb -->
     <div class="d-flex align-items-center gap-3">
-        <button class="btn btn-light btn-sm border-0" id="sidebarToggleBtn" type="button">
+        <button class="btn btn-light btn-sm border-0" id="sidebarToggleBtn" type="button" aria-label="Toggle Sidebar" aria-expanded="false" aria-controls="cmsSidebar">
             <i class="bi bi-list fs-4"></i>
         </button>
 

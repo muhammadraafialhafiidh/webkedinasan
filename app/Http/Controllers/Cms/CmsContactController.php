@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Cms;
 use App\Http\Controllers\Controller;
 use App\Models\ActivityLog;
 use App\Models\Contact;
+use App\Services\BrevoMailService;
 use Illuminate\Http\Request;
 
 class CmsContactController extends Controller
@@ -48,23 +49,40 @@ class CmsContactController extends Controller
         return view('cms.contact.show', compact('message'));
     }
 
-    public function reply(Request $request, $id)
+    public function reply(Request $request, $id, BrevoMailService $brevoMailService)
     {
         $message = Contact::findOrFail($id);
 
-        $request->validate([
+        $validated = $request->validate([
             'reply' => 'required|string',
         ], [
-            'reply.required' => 'Isi balasan wajib diisi.',
+            'reply.required' => 'Balasan wajib diisi.',
+            'reply.string' => 'Format balasan tidak valid.',
         ]);
 
-        $message->reply = $request->reply;
+        // Validasi jika editor hanya mengirimkan tag HTML kosong seperti <p>&nbsp;</p>
+        $cleanReply = Contact::htmlToPlainText($validated['reply']);
+        if ($cleanReply === '') {
+            return back()->withErrors(['reply' => 'Balasan wajib diisi.'])->withInput();
+        }
+
+        // 1. Simpan balasan ke database secara eksplisit (hanya field reply & replied_at)
+        $message->reply = $validated['reply'];
         $message->replied_at = now();
         $message->save();
 
+        // 2. Catat log aktivitas
         ActivityLog::record('reply_message', 'Pesan Masuk', "Membalas pesan dari {$message->name} ({$message->email})");
 
-        return back()->with('success', 'Balasan pesan berhasil disimpan dan dikirim.');
+        // 3. Kirim email notifikasi balasan melalui Brevo API (menggunakan teks bersih berparagraf)
+        $mailResult = $brevoMailService->sendContactReply($message, $cleanReply);
+
+        if ($mailResult['success']) {
+            return back()->with('success', 'Tanggapan berhasil disimpan dan email berhasil dikirim ke pengirim.');
+        }
+
+        // Jika DB berhasil tetapi Brevo gagal mengirim email
+        return back()->with('warning', 'Tanggapan berhasil disimpan di database, namun email gagal dikirim ke pengirim (' . e($message->email) . '). Silakan periksa log sistem atau koneksi Brevo API.');
     }
 
     public function markRead($id)

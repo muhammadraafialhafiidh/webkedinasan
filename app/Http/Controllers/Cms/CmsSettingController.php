@@ -29,10 +29,6 @@ class CmsSettingController extends Controller
             'twitter_url' => Setting::get('twitter_url'),
             'teks_footer' => Setting::get('teks_footer'),
             'google_maps_embed' => Setting::get('google_maps_embed'),
-            'statistik_nelayan' => Setting::get('statistik_nelayan'),
-            'statistik_produksi' => Setting::get('statistik_produksi'),
-            'statistik_pokdakan' => Setting::get('statistik_pokdakan'),
-            'statistik_layanan' => Setting::get('statistik_layanan'),
         ];
 
         return view('cms.setting.index', compact('settings'));
@@ -53,7 +49,6 @@ class CmsSettingController extends Controller
             'nama_website', 'tagline', 'deskripsi', 'email', 'telepon', 'fax',
             'alamat', 'jam_operasional', 'facebook_url', 'instagram_url',
             'youtube_url', 'twitter_url', 'teks_footer', 'google_maps_embed',
-            'statistik_nelayan', 'statistik_produksi', 'statistik_pokdakan', 'statistik_layanan'
         ];
 
         foreach ($fields as $field) {

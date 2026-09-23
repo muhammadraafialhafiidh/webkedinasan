@@ -20,9 +20,16 @@ class WebsiteVisitor extends Model
         'page_name',
         'referer',
         'visited_at',
+        'last_activity',
     ];
 
     protected $casts = [
         'visited_at' => 'datetime',
+        'last_activity' => 'datetime',
     ];
+
+    public function pageviews()
+    {
+        return $this->hasMany(WebsiteVisitorPageview::class, 'website_visitor_id');
+    }
 }

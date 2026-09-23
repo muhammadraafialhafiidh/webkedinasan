@@ -18,42 +18,42 @@
         <div class="col-lg-4">
             <div class="card-custom p-4 h-100 d-flex flex-column gap-4">
                 <div class="d-flex align-items-start gap-3">
-                    <div class="bg-primary bg-opacity-10 text-primary p-3 rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                    <div class="bg-primary bg-opacity-10 text-primary p-3 rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 50px; height: 50px;">
                         <i class="bi bi-geo-alt-fill fs-4 text-primary"></i>
                     </div>
-                    <div>
+                    <div class="min-w-0 flex-grow-1">
                         <h6 class="fw-bold text-primary-dark mb-1" style="font-family: 'Plus Jakarta Sans', sans-serif;">Alamat Kantor</h6>
-                        <p class="text-muted small mb-0 leading-relaxed">{{ $info['alamat'] }}</p>
+                        <p class="text-muted small mb-0 leading-relaxed text-break-word">{{ $info['alamat'] }}</p>
                     </div>
                 </div>
 
                 <div class="d-flex align-items-start gap-3">
-                    <div class="bg-info bg-opacity-10 text-info p-3 rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                    <div class="bg-info bg-opacity-10 text-info p-3 rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 50px; height: 50px;">
                         <i class="bi bi-telephone-fill fs-4 text-info"></i>
                     </div>
-                    <div>
+                    <div class="min-w-0 flex-grow-1">
                         <h6 class="fw-bold text-primary-dark mb-1" style="font-family: 'Plus Jakarta Sans', sans-serif;">Telepon & Fax</h6>
-                        <p class="text-muted small mb-0 leading-relaxed">{{ $info['telepon'] }}</p>
+                        <p class="text-muted small mb-0 leading-relaxed text-break-word">{{ $info['telepon'] }}</p>
                     </div>
                 </div>
 
                 <div class="d-flex align-items-start gap-3">
-                    <div class="bg-success bg-opacity-10 text-success p-3 rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                    <div class="bg-success bg-opacity-10 text-success p-3 rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 50px; height: 50px;">
                         <i class="bi bi-envelope-fill fs-4 text-success"></i>
                     </div>
-                    <div>
+                    <div class="min-w-0 flex-grow-1">
                         <h6 class="fw-bold text-primary-dark mb-1" style="font-family: 'Plus Jakarta Sans', sans-serif;">Email Resmi</h6>
-                        <p class="text-muted small mb-0 leading-relaxed">{{ $info['email'] }}</p>
+                        <p class="text-muted small mb-0 leading-relaxed text-break-word">{{ $info['email'] }}</p>
                     </div>
                 </div>
 
                 <div class="d-flex align-items-start gap-3">
-                    <div class="bg-warning bg-opacity-10 text-warning p-3 rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                    <div class="bg-warning bg-opacity-10 text-warning p-3 rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 50px; height: 50px;">
                         <i class="bi bi-clock-fill fs-4 text-warning"></i>
                     </div>
-                    <div>
+                    <div class="min-w-0 flex-grow-1">
                         <h6 class="fw-bold text-primary-dark mb-1" style="font-family: 'Plus Jakarta Sans', sans-serif;">Jam Pelayanan</h6>
-                        <p class="text-muted small mb-0 leading-relaxed">{{ $info['jam'] }}</p>
+                        <p class="text-muted small mb-0 leading-relaxed text-break-word">{{ $info['jam'] }}</p>
                     </div>
                 </div>
             </div>
@@ -119,8 +119,8 @@
 
     <!-- Embed Google Maps -->
     <div class="card-custom overflow-hidden border shadow-sm">
-        <div class="ratio ratio-21x9" style="min-height: 360px;">
-            <iframe src="{{ $info['map'] }}" allowfullscreen loading="lazy" class="w-100 h-100 border-0"></iframe>
+        <div class="ratio ratio-16x9 ratio-md-21x9" style="min-height: 320px;">
+            <iframe src="{{ $info['map'] }}" allowfullscreen loading="lazy" class="w-100 h-100 border-0" title="Peta Lokasi Kantor Dinas"></iframe>
         </div>
     </div>
 </div>

@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row g-4 pb-4 border-bottom border-secondary border-opacity-25">
             <!-- Kolom 1: Info Dinas -->
-            <div class="col-lg-4 col-md-6">
-                <div class="d-flex align-items-center gap-2.5 mb-3">
+            <div class="col-lg-4 col-md-6 ps-lg-2">
+                <div class="d-flex align-items-center mb-3" style="gap: 12px;">
                     @php
                         $logo = \App\Models\Setting::get('logo');
                     @endphp
@@ -14,11 +14,11 @@
                             <i class="bi bi-water fs-5 text-warning"></i>
                         </div>
                     @endif
-                    <h5 class="text-white fw-bold mb-0" style="font-family: 'Plus Jakarta Sans', sans-serif; letter-spacing: -0.01em;">
+                    <h5 class="text-white fw-bold mb-0 min-w-0 text-break-word" style="font-family: 'Plus Jakarta Sans', sans-serif; letter-spacing: -0.01em;">
                         {!! trim(strip_tags(\App\Models\Setting::get('nama_website', 'Portal Dinas Perikanan'))) !!}
                     </h5>
                 </div>
-                <p class="small text-white-50 leading-relaxed mb-4" style="max-width: 340px;">
+                <p class="small text-white-50 leading-relaxed mb-4 text-break-word" style="max-width: 340px;">
                     {!! trim(strip_tags(\App\Models\Setting::get('deskripsi', 'Website resmi Dinas Perikanan yang menyediakan informasi layanan, program, dan kegiatan dinas.'))) !!}
                 </p>
                 <div class="d-flex gap-2">
@@ -39,8 +39,8 @@
 
             <!-- Kolom 2: Navigasi Cepat -->
             <div class="col-lg-2 col-md-6">
-                <h6 class="text-white fw-bold mb-3.5" style="font-family: 'Plus Jakarta Sans', sans-serif;">Tautan Cepat</h6>
-                <ul class="list-unstyled mb-0 d-flex flex-column gap-2.5 small">
+                <h6 class="text-white fw-bold mb-3" style="font-family: 'Plus Jakarta Sans', sans-serif;">Tautan Cepat</h6>
+                <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
                     <li><a href="{{ route('home') }}" class="text-white-50 text-decoration-none hover-white transition-all">Beranda</a></li>
                     <li><a href="{{ route('profile') }}" class="text-white-50 text-decoration-none hover-white transition-all">Profil Dinas</a></li>
                     <li><a href="{{ route('news.index') }}" class="text-white-50 text-decoration-none hover-white transition-all">Berita Terbaru</a></li>
@@ -52,8 +52,8 @@
 
             <!-- Kolom 3: Layanan Unggulan -->
             <div class="col-lg-3 col-md-6">
-                <h6 class="text-white fw-bold mb-3.5" style="font-family: 'Plus Jakarta Sans', sans-serif;">Kategori Bidang</h6>
-                <ul class="list-unstyled mb-0 d-flex flex-column gap-2.5 small">
+                <h6 class="text-white fw-bold mb-3" style="font-family: 'Plus Jakarta Sans', sans-serif;">Kategori Bidang</h6>
+                <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
                     @foreach(\App\Models\ServiceCategory::orderBy('order')->get() as $cat)
                         <li>
                             <a href="{{ route('service.byCategory', $cat->slug) }}" class="text-white-50 text-decoration-none hover-white transition-all">
@@ -66,29 +66,29 @@
 
             <!-- Kolom 4: Info Kontak -->
             <div class="col-lg-3 col-md-6">
-                <h6 class="text-white fw-bold mb-3.5" style="font-family: 'Plus Jakarta Sans', sans-serif;">Kontak Kantor</h6>
-                <ul class="list-unstyled mb-0 d-flex flex-column gap-2.5 small text-white-50">
-                    <li class="d-flex align-items-start gap-2.5">
-                        <i class="bi bi-geo-alt-fill text-warning mt-1"></i>
-                        <span>{!! trim(strip_tags(\App\Models\Setting::get('alamat', 'Jl. Merdeka No. 1, Purwokerto'))) !!}</span>
+                <h6 class="text-white fw-bold mb-3" style="font-family: 'Plus Jakarta Sans', sans-serif;">Kontak Kantor</h6>
+                <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small text-white-50">
+                    <li class="d-flex align-items-start" style="gap: 10px;">
+                        <i class="bi bi-geo-alt-fill text-warning mt-1" style="min-width: 20px; text-align: center; font-size: 1rem;"></i>
+                        <span class="min-w-0 text-break-word flex-grow-1">{!! trim(strip_tags(\App\Models\Setting::get('alamat', 'Jl. Merdeka No. 1, Purwokerto'))) !!}</span>
                     </li>
-                    <li class="d-flex align-items-center gap-2.5">
-                        <i class="bi bi-telephone-fill text-warning"></i>
-                        <span>{!! trim(strip_tags(\App\Models\Setting::get('telepon', '(0281) 123456'))) !!}</span>
+                    <li class="d-flex align-items-center" style="gap: 10px;">
+                        <i class="bi bi-telephone-fill text-warning" style="min-width: 20px; text-align: center; font-size: 1rem;"></i>
+                        <span class="min-w-0 text-break-word flex-grow-1">{!! trim(strip_tags(\App\Models\Setting::get('telepon', '(0281) 123456'))) !!}</span>
                     </li>
-                    <li class="d-flex align-items-center gap-2.5">
-                        <i class="bi bi-envelope-fill text-warning"></i>
-                        <span>{!! trim(strip_tags(\App\Models\Setting::get('email', 'info@perikanan.go.id'))) !!}</span>
+                    <li class="d-flex align-items-center" style="gap: 10px;">
+                        <i class="bi bi-envelope-fill text-warning" style="min-width: 20px; text-align: center; font-size: 1rem;"></i>
+                        <span class="min-w-0 text-break-word flex-grow-1">{!! trim(strip_tags(\App\Models\Setting::get('email', 'info@perikanan.go.id'))) !!}</span>
                     </li>
-                    <li class="d-flex align-items-center gap-2.5">
-                        <i class="bi bi-clock-fill text-warning"></i>
-                        <span>{!! trim(strip_tags(\App\Models\Setting::get('jam_operasional', 'Senin–Jumat: 08.00–16.00 WIB'))) !!}</span>
+                    <li class="d-flex align-items-center" style="gap: 10px;">
+                        <i class="bi bi-clock-fill text-warning" style="min-width: 20px; text-align: center; font-size: 1rem;"></i>
+                        <span class="min-w-0 text-break-word flex-grow-1">{!! trim(strip_tags(\App\Models\Setting::get('jam_operasional', 'Senin–Jumat: 08.00–16.00 WIB'))) !!}</span>
                     </li>
                 </ul>
             </div>
         </div>
 
-        <div class="pt-4 text-center small text-white-50">
+        <div class="pt-4 text-center small text-white-50 text-break-word">
             {!! trim(strip_tags(\App\Models\Setting::get('teks_footer', '© 2025 Dinas Perikanan. Seluruh hak cipta dilindungi undang-undang.'))) !!}
         </div>
     </div>

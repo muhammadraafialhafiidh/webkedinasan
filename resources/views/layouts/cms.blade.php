@@ -220,6 +220,13 @@
             transition: margin-left var(--transition), width var(--transition);
         }
 
+        /* Sticky Topbar */
+        .cms-topbar {
+            position: sticky;
+            top: 0;
+            z-index: 1020; /* Ensures it stays above content, but below sidebar (1040) and overlay (1030) */
+        }
+
         /* Responsive Sidebar Toggle */
         body.sidebar-collapsed .cms-sidebar {
             transform: translateX(-100%);
@@ -232,6 +239,8 @@
         @media (max-width: 991px) {
             .cms-sidebar {
                 transform: translateX(-100%);
+                /* Limit sidebar width on small mobile devices to leave space for context */
+                width: min(var(--sidebar-width), 85vw);
             }
             .cms-main-content {
                 margin-left: 0;
@@ -240,6 +249,29 @@
             body.sidebar-expanded .cms-sidebar {
                 transform: translateX(0);
             }
+            /* Prevent body scroll when sidebar is open on mobile/tablet */
+            body.sidebar-expanded {
+                overflow: hidden !important;
+            }
+        }
+
+        /* Responsive Sidebar Overlay */
+        .sidebar-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1030; /* Below sidebar (1040) but above everything else */
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity var(--transition), visibility var(--transition);
+            backdrop-filter: blur(2px);
+        }
+        body.sidebar-expanded .sidebar-overlay {
+            opacity: 1;
+            visibility: visible;
         }
 
         /* CMS Table */
@@ -371,6 +403,9 @@
 <body>
 
 <div class="cms-wrapper">
+    <!-- Sidebar Overlay for Mobile/Tablet -->
+    <div id="cmsSidebarOverlay" class="sidebar-overlay"></div>
+
     <!-- Sidebar -->
     @include('cms.partials.sidebar')
 
@@ -409,6 +444,21 @@
                                 </div>
                             </div>
                             <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                    </div>
+                @endif
+
+                @if(session('warning'))
+                    <div class="toast align-items-center text-dark bg-warning border-0 show shadow-lg mb-2" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="true" data-bs-delay="6000">
+                        <div class="d-flex">
+                            <div class="toast-body d-flex align-items-center gap-2">
+                                <i class="bi bi-exclamation-circle-fill fs-4 text-dark"></i>
+                                <div>
+                                    <strong class="d-block me-auto text-dark">Pemberitahuan</strong>
+                                    <span>{{ session('warning') }}</span>
+                                </div>
+                            </div>
+                            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
                         </div>
                     </div>
                 @endif
@@ -534,15 +584,42 @@
     document.addEventListener('DOMContentLoaded', function () {
         // Toggle Sidebar
         const sidebarToggleBtn = document.getElementById('sidebarToggleBtn');
+        const sidebarOverlay = document.getElementById('cmsSidebarOverlay');
+        
         if (sidebarToggleBtn) {
             sidebarToggleBtn.addEventListener('click', function () {
                 if (window.innerWidth < 992) {
                     document.body.classList.toggle('sidebar-expanded');
+                    const isExpanded = document.body.classList.contains('sidebar-expanded');
+                    sidebarToggleBtn.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
                 } else {
                     document.body.classList.toggle('sidebar-collapsed');
                 }
             });
         }
+
+        // Close sidebar via Overlay click
+        if (sidebarOverlay) {
+            sidebarOverlay.addEventListener('click', function () {
+                if (document.body.classList.contains('sidebar-expanded')) {
+                    document.body.classList.remove('sidebar-expanded');
+                    if (sidebarToggleBtn) {
+                        sidebarToggleBtn.setAttribute('aria-expanded', 'false');
+                    }
+                }
+            });
+        }
+        
+        // Accessibility: Close sidebar via Escape key on mobile
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && document.body.classList.contains('sidebar-expanded')) {
+                document.body.classList.remove('sidebar-expanded');
+                if (sidebarToggleBtn) {
+                    sidebarToggleBtn.setAttribute('aria-expanded', 'false');
+                    sidebarToggleBtn.focus();
+                }
+            }
+        });
 
         // Auto initialize and show all Bootstrap 5 Toasts
         const toastElList = document.querySelectorAll('#cmsToastContainer .toast');

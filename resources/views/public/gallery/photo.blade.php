@@ -17,34 +17,52 @@
         @forelse($albums as $album)
             @php
                 $coverUrl = 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80';
+                $isInstagramOnly = false;
                 if (!empty($album->cover)) {
                     $coverUrl = asset('storage/' . $album->cover);
                 } elseif ($album->photos->count() > 0) {
-                    $coverUrl = asset('storage/' . $album->photos->first()->image);
+                    $firstLocal = $album->photos->first(fn($p) => !empty($p->image));
+                    if ($firstLocal) {
+                        $coverUrl = asset('storage/' . $firstLocal->image);
+                    } else {
+                        $isInstagramOnly = true;
+                    }
                 }
             @endphp
             <div class="col-lg-4 col-md-6">
                 <div class="card-custom h-100 d-flex flex-column position-relative">
                     <div class="news-thumb-wrapper" style="aspect-ratio: 16/10; overflow: hidden; position: relative;">
-                        <img src="{{ $coverUrl }}" alt="{{ $album->name }}" class="w-100 h-100" style="object-fit: cover; transition: transform 0.4s ease;" onerror="this.src='https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80'">
+                        @if($isInstagramOnly)
+                            <div class="w-100 h-100 d-flex flex-column align-items-center justify-content-center text-white text-center p-3 position-relative" 
+                                 style="background: linear-gradient(135deg, #405DE6 0%, #5851DB 25%, #833AB4 50%, #C13584 75%, #E1306C 100%);">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center mb-2 shadow-sm" style="width: 52px; height: 52px; background: rgba(255,255,255,0.22); backdrop-filter: blur(6px); border: 2px solid rgba(255,255,255,0.4);">
+                                    <i class="bi bi-instagram fs-2 text-white"></i>
+                                </div>
+                                <span class="badge bg-white text-dark rounded-pill px-3 py-1 small fw-bold shadow-sm">
+                                    <i class="bi bi-instagram me-1 text-danger"></i>Dokumentasi Instagram
+                                </span>
+                            </div>
+                        @else
+                            <img src="{{ $coverUrl }}" alt="{{ $album->name }}" class="w-100 h-100" style="object-fit: cover; transition: transform 0.4s ease;" onerror="this.src='https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80'">
+                        @endif
                         <span class="badge bg-dark bg-opacity-75 position-absolute top-0 end-0 m-3 px-3 py-1.5 rounded-pill small fw-semibold shadow-sm backdrop-blur">
                             <i class="bi bi-images me-1 text-warning"></i>{{ $album->photos_count ?? $album->photos->count() }} Foto
                         </span>
                     </div>
                     <div class="p-4 d-flex flex-column flex-grow-1">
-                        <h5 class="fw-bold mb-2 fs-5">
+                        <h5 class="fw-bold mb-2 fs-5 text-break-word">
                             <a href="{{ route('gallery.photo.show', $album->id) }}" class="text-dark text-decoration-none hover-primary stretched-link">
                                 {{ $album->name }}
                             </a>
                         </h5>
-                        <p class="text-muted small mb-4 flex-grow-1" style="line-height: 1.65;">
+                        <p class="text-muted small mb-4 flex-grow-1 text-break-word" style="line-height: 1.65;">
                             {{ Str::limit(strip_tags($album->description), 90) ?: 'Dokumentasi foto kegiatan dinas.' }}
                         </p>
-                        <div class="pt-3 border-top d-flex justify-content-between align-items-center mt-auto">
-                            <span class="small text-muted fw-semibold">
+                        <div class="pt-3 border-top d-flex justify-content-between align-items-center flex-wrap gap-2 mt-auto">
+                            <span class="small text-muted fw-semibold min-w-0 text-break-word">
                                 <i class="bi bi-calendar3 me-1"></i>{{ $album->created_at ? $album->created_at->format('d M Y') : '-' }}
                             </span>
-                            <span class="btn btn-sm btn-outline-primary rounded-pill fw-bold px-3">
+                            <span class="btn btn-sm btn-outline-primary rounded-pill fw-bold px-3 flex-shrink-0">
                                 Buka Album <i class="bi bi-chevron-right ms-1"></i>
                             </span>
                         </div>

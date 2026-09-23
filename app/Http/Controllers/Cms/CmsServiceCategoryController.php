@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\ActivityLog;
 use App\Models\ServiceCategory;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
 class CmsServiceCategoryController extends Controller
@@ -21,19 +22,24 @@ class CmsServiceCategoryController extends Controller
         $request->validate([
             'name' => 'required|string|max:200|unique:service_categories,name',
             'description' => 'nullable|string',
-            'order' => 'nullable|integer',
         ], [
             'name.required' => 'Nama kategori/bidang layanan wajib diisi.',
             'name.unique' => 'Nama kategori/bidang sudah ada.',
         ]);
 
-        $category = ServiceCategory::create([
-            'name' => $request->name,
-            'slug' => Str::slug($request->name),
-            'description' => $request->description,
-            'icon' => 'assets/images/service-cat-icon.png',
-            'order' => $request->order ?? 0,
-        ]);
+        $category = DB::transaction(function () use ($request) {
+            // Geser seluruh kategori lama ke bawah (+1)
+            ServiceCategory::query()->increment('order');
+
+            // Simpan kategori baru di posisi paling atas (order = 0)
+            return ServiceCategory::create([
+                'name' => $request->name,
+                'slug' => Str::slug($request->name),
+                'description' => $request->description,
+                'icon' => 'assets/images/service-cat-icon.png',
+                'order' => 0,
+            ]);
+        });
 
         ActivityLog::record('create', 'Kategori Layanan', "Menambahkan bidang layanan: {$category->name}");
 
@@ -47,13 +53,12 @@ class CmsServiceCategoryController extends Controller
         $request->validate([
             'name' => 'required|string|max:200|unique:service_categories,name,' . $id,
             'description' => 'nullable|string',
-            'order' => 'nullable|integer',
         ]);
 
         $category->name = $request->name;
         $category->slug = Str::slug($request->name);
         $category->description = $request->description;
-        $category->order = $request->order ?? 0;
+        // Posisi order tetap dipertahankan tanpa perubahan saat edit
         $category->save();
 
         ActivityLog::record('update', 'Kategori Layanan', "Mengubah bidang layanan ID #{$category->id}: {$category->name}");
@@ -70,7 +75,18 @@ class CmsServiceCategoryController extends Controller
         }
 
         $name = $category->name;
-        $category->delete();
+
+        DB::transaction(function () use ($category) {
+            $category->delete();
+
+            // Rapikan urutan kategori yang tersisa agar tidak ada gap (0, 1, 2, ...)
+            $categories = ServiceCategory::orderBy('order', 'asc')->get();
+            foreach ($categories as $index => $cat) {
+                if ($cat->order !== $index) {
+                    $cat->update(['order' => $index]);
+                }
+            }
+        });
 
         ActivityLog::record('delete', 'Kategori Layanan', "Menghapus bidang layanan: {$name}");
 

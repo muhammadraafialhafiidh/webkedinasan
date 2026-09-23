@@ -110,7 +110,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="description" class="form-label">Deskripsi Singkat</label>
-                    <textarea name="description" id="description" rows="2" class="form-control"></textarea>
+                    <textarea name="description" id="description" rows="2" class="form-control" data-no-ckeditor></textarea>
                 </div>
                 <div class="mb-3">
                     <label for="file" class="form-label">Berkas File (PDF / Word / Excel) <span class="text-danger">*</span></label>
@@ -147,7 +147,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="edit_desc" class="form-label">Deskripsi Singkat</label>
-                    <textarea name="description" id="edit_desc" rows="2" class="form-control"></textarea>
+                    <textarea name="description" id="edit_desc" rows="2" class="form-control" data-no-ckeditor></textarea>
                 </div>
                 <div class="mb-3">
                     <label for="edit_file" class="form-label">Ganti Berkas File (Opsional)</label>

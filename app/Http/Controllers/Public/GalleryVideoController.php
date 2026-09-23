@@ -9,7 +9,7 @@ class GalleryVideoController extends Controller
 {
     public function index()
     {
-        $videos = GalleryVideo::orderBy('created_at', 'desc')->get();
+        $videos = GalleryVideo::orderBy('created_at', 'desc')->paginate(12);
 
         $breadcrumbs = [
             ['label' => 'Galeri', 'url' => route('gallery.photo')],

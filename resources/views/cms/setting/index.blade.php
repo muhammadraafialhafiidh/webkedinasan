@@ -11,7 +11,7 @@
 <div class="d-flex justify-content-between align-items-center mb-4">
     <div>
         <h3 class="fw-bold text-primary mb-1">Pengaturan Website Global</h3>
-        <p class="text-muted small mb-0">Kelola identitas instansi, logo, kontak, link media sosial, dan data statistik beranda</p>
+        <p class="text-muted small mb-0">Kelola identitas instansi, logo, kontak, dan link media sosial</p>
     </div>
 </div>
 
@@ -81,33 +81,6 @@
                         <label for="google_maps_embed" class="form-label">URL / Kode Embed Google Maps</label>
                         <small class="form-text text-muted d-block mb-1">Anda bisa memasukkan URL langsung (https://www.google.com/maps/embed?pb=...) atau menempelkan seluruh kode HTML &lt;iframe src="..."&gt;&lt;/iframe&gt; dari Google Maps Share/Embed.</small>
                         <input type="text" name="google_maps_embed" id="google_maps_embed" class="form-control font-monospace small" value="{{ old('google_maps_embed', $settings['google_maps_embed']) }}" placeholder="Tempel URL atau kode <iframe> dari Google Maps...">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Section 3: Data Statistik Beranda -->
-            <div class="card border-0 shadow-sm p-4 mb-4">
-                <h5 class="fw-bold text-primary mb-3 pb-2 border-bottom"><i class="bi bi-bar-chart-fill me-2"></i>Data Statistik Beranda</h5>
-
-                <div class="row g-3">
-                    <div class="col-md-6">
-                        <label for="statistik_nelayan" class="form-label">Statistik Pembudidaya & Nelayan</label>
-                        <input type="text" name="statistik_nelayan" id="statistik_nelayan" class="form-control" value="{{ old('statistik_nelayan', $settings['statistik_nelayan']) }}">
-                    </div>
-
-                    <div class="col-md-6">
-                        <label for="statistik_produksi" class="form-label">Statistik Produksi Perikanan</label>
-                        <input type="text" name="statistik_produksi" id="statistik_produksi" class="form-control" value="{{ old('statistik_produksi', $settings['statistik_produksi']) }}">
-                    </div>
-
-                    <div class="col-md-6">
-                        <label for="statistik_pokdakan" class="form-label">Statistik Kelompok Pokdakan</label>
-                        <input type="text" name="statistik_pokdakan" id="statistik_pokdakan" class="form-control" value="{{ old('statistik_pokdakan', $settings['statistik_pokdakan']) }}">
-                    </div>
-
-                    <div class="col-md-6">
-                        <label for="statistik_layanan" class="form-label">Statistik Standar Layanan</label>
-                        <input type="text" name="statistik_layanan" id="statistik_layanan" class="form-control" value="{{ old('statistik_layanan', $settings['statistik_layanan']) }}">
                     </div>
                 </div>
             </div>

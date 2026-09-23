@@ -41,21 +41,21 @@
                         <span class="badge-ocean">{{ $service->serviceCategory->name ?? 'Bidang' }}</span>
                     </div>
 
-                    <h5 class="fw-bold mb-2 text-primary-dark fs-5" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                    <h5 class="fw-bold mb-2 text-primary-dark fs-5 text-break-word" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                         <a href="{{ route('service.show', $service->slug) }}" class="text-dark text-decoration-none hover-primary stretched-link">
                             {{ $service->title }}
                         </a>
                     </h5>
 
-                    <p class="text-muted small mb-4 flex-grow-1" style="line-height: 1.65;">
+                    <p class="text-muted small mb-4 flex-grow-1 text-break-word" style="line-height: 1.65;">
                         {{ Str::limit(strip_tags($service->description), 110) }}
                     </p>
 
-                    <div class="pt-3 border-top d-flex justify-content-between align-items-center mt-auto">
-                        <span class="small fw-semibold text-muted">
+                    <div class="pt-3 border-top d-flex justify-content-between align-items-center flex-wrap gap-2 mt-auto">
+                        <span class="small fw-semibold text-muted min-w-0 text-break-word">
                             <i class="bi bi-tag-fill me-1 text-warning"></i>{{ $service->cost ?? 'Gratis' }}
                         </span>
-                        <span class="btn btn-sm btn-outline-primary rounded-pill fw-bold px-3">
+                        <span class="btn btn-sm btn-outline-primary rounded-pill fw-bold px-3 flex-shrink-0">
                             Lihat Detail <i class="bi bi-chevron-right ms-1"></i>
                         </span>
                     </div>

@@ -1,0 +1,1260 @@
+{
+  "communities": {
+    "0": [
+      "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#1.-gambaran-umum-proyek",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#1.1-tujuan-sistem",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#2.-tech-stack",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#3.-hak-akses-&-role",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#3.1-daftar-role",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#3.2-matriks-hak-akses",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#4.-kebutuhan-fungsional",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#4.1-halaman-publik",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#4.2-cms-—-autentikasi",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#4.3-cms-—-dashboard",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#4.4-cms-—-manajemen-konten",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#4.5-cms-—-super-admin-only",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#5.-kebutuhan-non-fungsional",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#6.-struktur-database",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#7.-routing",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#7.1-public-routes-(web.php)",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#7.2-auth-routes",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#7.3-cms-routes-—-admin-&-super-admin-(prefix:-/cms)",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#7.4-cms-routes-—-super-admin-only-(prefix:-/cms)",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#8.-seeder-&-default-data",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#`bannerseeder`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#`contactseeder`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#`documentseeder`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#`galleryalbumseeder`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#`galleryphotoseeder`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#`galleryvideoseeder`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#`newscategoryseeder`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#`newsseeder`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#`organizationmemberseeder`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#`profilecontentseeder`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#`servicecategoryseeder`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#`serviceseeder`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#`settingseeder`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#`userseeder`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#bidang-ketersediaan-dan-stabilisasi-pangan",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#bidang-penanganan-kerawanan-pangan",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#bidang-penganekaragaman-dan-keamanan-pangan",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#bidang-perikanan",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-auth-01:-login-cms",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-auth-02:-lupa-password",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-auth-03:-logout",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-01:-dashboard",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-02:-manajemen-berita",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-03:-manajemen-kategori-berita",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-04:-manajemen-kategori-layanan",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-05:-manajemen-layanan",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-06:-manajemen-galeri-foto",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-07:-manajemen-galeri-video",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-08:-manajemen-dokumen",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-09:-manajemen-banner/slider",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-10:-manajemen-profil-dinas",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-11:-pesan-masuk-(kontak)",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-01:-beranda",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-02:-profil-dinas",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-03:-daftar-berita",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-04:-detail-berita",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-05:-layanan",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-06:-detail-layanan",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-07:-galeri-foto",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-08:-galeri-video",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-09:-dokumen-&-download",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-10:-kontak",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-spa-01:-manajemen-user",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-spa-02:-manajemen-role-&-hak-akses",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-spa-03:-pengaturan-website",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#f-spa-04:-log-aktivitas",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#requirements-—-cms-portal-informasi-dinas-perikanan",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`activity_logs`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`banners`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`contacts`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`documents`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`gallery_albums`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`gallery_photos`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`gallery_videos`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`news_categories`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`news`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`organization_members`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`profile_contents`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`service_categories`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`services`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`settings`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`users`",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#uptd-pbat",
+      "doc:D:/kampus/magang/program/coba/4/requirements.md#urutan-pemanggilan-di-`databaseseeder`"
+    ],
+    "1": [
+      "app_http_controllers_cms_authcontroller",
+      "app_http_controllers_cms_cmsactivitylogcontroller",
+      "app_http_controllers_cms_cmsalbumcontroller",
+      "app_http_controllers_cms_cmsbannercontroller",
+      "app_http_controllers_cms_cmscontactcontroller",
+      "app_http_controllers_cms_cmsdocumentcontroller",
+      "app_http_controllers_cms_cmsdocumentcontroller_cmsdocumentcontroller",
+      "app_http_controllers_cms_cmsdocumentcontroller_cmsdocumentcontroller_destroy",
+      "app_http_controllers_cms_cmsdocumentcontroller_cmsdocumentcontroller_index",
+      "app_http_controllers_cms_cmsdocumentcontroller_cmsdocumentcontroller_store",
+      "app_http_controllers_cms_cmsdocumentcontroller_cmsdocumentcontroller_update",
+      "app_http_controllers_cms_cmsnewscategorycontroller",
+      "app_http_controllers_cms_cmsnewscontroller",
+      "app_http_controllers_cms_cmsorganizationcontroller",
+      "app_http_controllers_cms_cmsorganizationcontroller_cmsorganizationcontroller",
+      "app_http_controllers_cms_cmsorganizationcontroller_cmsorganizationcontroller_destroy",
+      "app_http_controllers_cms_cmsorganizationcontroller_cmsorganizationcontroller_store",
+      "app_http_controllers_cms_cmsorganizationcontroller_cmsorganizationcontroller_update",
+      "app_http_controllers_cms_cmspenanggungjawabcontroller",
+      "app_http_controllers_cms_cmsphotocontroller",
+      "app_http_controllers_cms_cmsprofilecontroller",
+      "app_http_controllers_cms_cmsprofilecontroller_cmsprofilecontroller",
+      "app_http_controllers_cms_cmsprofilecontroller_cmsprofilecontroller_index",
+      "app_http_controllers_cms_cmsprofilecontroller_cmsprofilecontroller_update",
+      "app_http_controllers_cms_cmsrolecontroller",
+      "app_http_controllers_cms_cmsrolecontroller_cmsrolecontroller",
+      "app_http_controllers_cms_cmsrolecontroller_cmsrolecontroller_index",
+      "app_http_controllers_cms_cmsservicecategorycontroller",
+      "app_http_controllers_cms_cmsservicecontroller",
+      "app_http_controllers_cms_cmssettingcontroller",
+      "app_http_controllers_cms_cmsusercontroller",
+      "app_http_controllers_cms_cmsvideocontroller",
+      "app_http_controllers_cms_dashboardcontroller",
+      "app_http_controllers_cms_dashboardcontroller_dashboardcontroller",
+      "app_http_controllers_cms_forgotpasswordcontroller",
+      "app_http_controllers_controller",
+      "app_http_controllers_controller_controller",
+      "app_http_controllers_public_contactcontroller",
+      "app_http_controllers_public_documentcontroller",
+      "app_http_controllers_public_documentcontroller_documentcontroller",
+      "app_http_controllers_public_documentcontroller_documentcontroller_index",
+      "app_http_controllers_public_galleryphotocontroller",
+      "app_http_controllers_public_galleryvideocontroller",
+      "app_http_controllers_public_galleryvideocontroller_galleryvideocontroller",
+      "app_http_controllers_public_homecontroller",
+      "app_http_controllers_public_homecontroller_homecontroller",
+      "app_http_controllers_public_newscontroller",
+      "app_http_controllers_public_profilecontroller",
+      "app_http_controllers_public_profilecontroller_profilecontroller",
+      "app_http_controllers_public_profilecontroller_profilecontroller_index",
+      "app_http_controllers_public_servicecontroller",
+      "app_models_activitylog",
+      "app_models_banner",
+      "app_models_contact",
+      "app_models_document",
+      "app_models_document_document",
+      "app_models_galleryalbum",
+      "app_models_galleryphoto",
+      "app_models_galleryvideo",
+      "app_models_news",
+      "app_models_newscategory",
+      "app_models_organizationmember",
+      "app_models_organizationmember_organizationmember",
+      "app_models_penanggungjawab",
+      "app_models_profilecontent",
+      "app_models_profilecontent_profilecontent",
+      "app_models_service",
+      "app_models_servicecategory",
+      "app_models_setting",
+      "app_models_user",
+      "config_auth",
+      "config_cache",
+      "config_mail",
+      "database_seeders_galleryphotoseeder",
+      "database_seeders_newsseeder",
+      "database_seeders_penanggungjawabseeder",
+      "illuminate_database_eloquent_factories_hasfactory",
+      "illuminate_database_eloquent_model",
+      "illuminate_database_eloquent_relations_belongstomany",
+      "illuminate_http_request",
+      "routes_web"
+    ],
+    "2": [
+      "app_http_controllers_cms_authcontroller_authcontroller",
+      "app_http_controllers_cms_authcontroller_authcontroller_login",
+      "app_http_controllers_cms_authcontroller_authcontroller_logout",
+      "app_http_controllers_cms_authcontroller_authcontroller_showlogin",
+      "app_http_controllers_cms_cmsactivitylogcontroller_cmsactivitylogcontroller",
+      "app_http_controllers_cms_cmsactivitylogcontroller_cmsactivitylogcontroller_export",
+      "app_http_controllers_cms_cmsactivitylogcontroller_cmsactivitylogcontroller_index",
+      "app_http_controllers_cms_cmsbannercontroller_cmsbannercontroller",
+      "app_http_controllers_cms_cmsbannercontroller_cmsbannercontroller_destroy",
+      "app_http_controllers_cms_cmsbannercontroller_cmsbannercontroller_index",
+      "app_http_controllers_cms_cmsbannercontroller_cmsbannercontroller_store",
+      "app_http_controllers_cms_cmsbannercontroller_cmsbannercontroller_toggleactive",
+      "app_http_controllers_cms_cmsbannercontroller_cmsbannercontroller_update",
+      "app_http_controllers_cms_cmscontactcontroller_cmscontactcontroller",
+      "app_http_controllers_cms_cmscontactcontroller_cmscontactcontroller_destroy",
+      "app_http_controllers_cms_cmscontactcontroller_cmscontactcontroller_index",
+      "app_http_controllers_cms_cmscontactcontroller_cmscontactcontroller_markread",
+      "app_http_controllers_cms_cmscontactcontroller_cmscontactcontroller_reply",
+      "app_http_controllers_cms_cmscontactcontroller_cmscontactcontroller_show",
+      "app_http_controllers_cms_cmsusercontroller_cmsusercontroller",
+      "app_http_controllers_cms_cmsusercontroller_cmsusercontroller_create",
+      "app_http_controllers_cms_cmsusercontroller_cmsusercontroller_destroy",
+      "app_http_controllers_cms_cmsusercontroller_cmsusercontroller_edit",
+      "app_http_controllers_cms_cmsusercontroller_cmsusercontroller_index",
+      "app_http_controllers_cms_cmsusercontroller_cmsusercontroller_resetpassword",
+      "app_http_controllers_cms_cmsusercontroller_cmsusercontroller_store",
+      "app_http_controllers_cms_cmsusercontroller_cmsusercontroller_update",
+      "app_http_controllers_cms_forgotpasswordcontroller_forgotpasswordcontroller",
+      "app_http_controllers_cms_forgotpasswordcontroller_forgotpasswordcontroller_resetpassword",
+      "app_http_controllers_cms_forgotpasswordcontroller_forgotpasswordcontroller_sendresetlink",
+      "app_http_controllers_cms_forgotpasswordcontroller_forgotpasswordcontroller_showexpiredlink",
+      "app_http_controllers_cms_forgotpasswordcontroller_forgotpasswordcontroller_showforgotpassword",
+      "app_http_controllers_cms_forgotpasswordcontroller_forgotpasswordcontroller_showresetpassword",
+      "app_models_activitylog_activitylog",
+      "app_models_banner_banner",
+      "app_models_banner_banner_scopeactive",
+      "app_models_contact_contact",
+      "app_models_user_user",
+      "app_models_user_user_casts",
+      "app_models_user_user_isadmin",
+      "app_models_user_user_isrootsuperadmin",
+      "app_models_user_user_issuperadmin",
+      "app_policies_userpolicy",
+      "app_policies_userpolicy_userpolicy",
+      "app_policies_userpolicy_userpolicy_assignrole",
+      "app_policies_userpolicy_userpolicy_create",
+      "app_policies_userpolicy_userpolicy_delete",
+      "app_policies_userpolicy_userpolicy_resetpassword",
+      "app_policies_userpolicy_userpolicy_update",
+      "app_policies_userpolicy_userpolicy_viewany",
+      "illuminate_foundation_auth_user",
+      "illuminate_notifications_notifiable"
+    ],
+    "3": [
+      "doc:D:/kampus/magang/program/coba/4/task.md",
+      "doc:D:/kampus/magang/program/coba/4/task.md#1.1-inisialisasi-laravel",
+      "doc:D:/kampus/magang/program/coba/4/task.md#1.2-struktur-folder",
+      "doc:D:/kampus/magang/program/coba/4/task.md#1.3-aset-frontend",
+      "doc:D:/kampus/magang/program/coba/4/task.md#2.1-migration",
+      "doc:D:/kampus/magang/program/coba/4/task.md#2.2-model-&-relasi",
+      "doc:D:/kampus/magang/program/coba/4/task.md#2.3-seeder",
+      "doc:D:/kampus/magang/program/coba/4/task.md#3.1-autentikasi-custom",
+      "doc:D:/kampus/magang/program/coba/4/task.md#3.2-middleware",
+      "doc:D:/kampus/magang/program/coba/4/task.md#4.1-layout-publik",
+      "doc:D:/kampus/magang/program/coba/4/task.md#4.2-beranda",
+      "doc:D:/kampus/magang/program/coba/4/task.md#4.3-profil-dinas",
+      "doc:D:/kampus/magang/program/coba/4/task.md#4.4-berita",
+      "doc:D:/kampus/magang/program/coba/4/task.md#4.5-layanan",
+      "doc:D:/kampus/magang/program/coba/4/task.md#4.6-galeri",
+      "doc:D:/kampus/magang/program/coba/4/task.md#4.7-dokumen-&-download",
+      "doc:D:/kampus/magang/program/coba/4/task.md#4.8-kontak",
+      "doc:D:/kampus/magang/program/coba/4/task.md#5.1-layout-cms",
+      "doc:D:/kampus/magang/program/coba/4/task.md#5.10-manajemen-profil-dinas",
+      "doc:D:/kampus/magang/program/coba/4/task.md#5.11-pesan-masuk",
+      "doc:D:/kampus/magang/program/coba/4/task.md#5.13-manajemen-user-(super-admin)",
+      "doc:D:/kampus/magang/program/coba/4/task.md#5.14-manajemen-role-(super-admin)",
+      "doc:D:/kampus/magang/program/coba/4/task.md#5.15-pengaturan-website-(super-admin)",
+      "doc:D:/kampus/magang/program/coba/4/task.md#5.16-log-aktivitas-(super-admin)",
+      "doc:D:/kampus/magang/program/coba/4/task.md#5.2-dashboard-cms",
+      "doc:D:/kampus/magang/program/coba/4/task.md#5.3-manajemen-berita",
+      "doc:D:/kampus/magang/program/coba/4/task.md#5.4-manajemen-kategori-berita",
+      "doc:D:/kampus/magang/program/coba/4/task.md#5.5-manajemen-kategori-layanan",
+      "doc:D:/kampus/magang/program/coba/4/task.md#5.6-manajemen-galeri-foto",
+      "doc:D:/kampus/magang/program/coba/4/task.md#5.6-manajemen-layanan",
+      "doc:D:/kampus/magang/program/coba/4/task.md#5.7-manajemen-galeri-video",
+      "doc:D:/kampus/magang/program/coba/4/task.md#5.8-manajemen-dokumen",
+      "doc:D:/kampus/magang/program/coba/4/task.md#5.9-manajemen-banner",
+      "doc:D:/kampus/magang/program/coba/4/task.md#6.1-testing-fungsional",
+      "doc:D:/kampus/magang/program/coba/4/task.md#6.2-keamanan",
+      "doc:D:/kampus/magang/program/coba/4/task.md#6.3-polish-ui",
+      "doc:D:/kampus/magang/program/coba/4/task.md#6.4-optimasi",
+      "doc:D:/kampus/magang/program/coba/4/task.md#6.5-deployment-checklist",
+      "doc:D:/kampus/magang/program/coba/4/task.md#informasi-proyek",
+      "doc:D:/kampus/magang/program/coba/4/task.md#legenda-status",
+      "doc:D:/kampus/magang/program/coba/4/task.md#must-have-(wajib-ada)",
+      "doc:D:/kampus/magang/program/coba/4/task.md#nice-to-have-(tambahan)",
+      "doc:D:/kampus/magang/program/coba/4/task.md#phase-1-—-project-setup-&-konfigurasi",
+      "doc:D:/kampus/magang/program/coba/4/task.md#phase-2-—-database-&-model",
+      "doc:D:/kampus/magang/program/coba/4/task.md#phase-3-—-autentikasi-&-middleware",
+      "doc:D:/kampus/magang/program/coba/4/task.md#phase-4-—-halaman-publik",
+      "doc:D:/kampus/magang/program/coba/4/task.md#phase-5-—-cms-admin-&-super-admin",
+      "doc:D:/kampus/magang/program/coba/4/task.md#phase-6-—-testing,-polish-&-deployment",
+      "doc:D:/kampus/magang/program/coba/4/task.md#prioritas-fitur",
+      "doc:D:/kampus/magang/program/coba/4/task.md#ringkasan-task-per-fase",
+      "doc:D:/kampus/magang/program/coba/4/task.md#should-have-(penting)",
+      "doc:D:/kampus/magang/program/coba/4/task.md#task-plan-—-cms-portal-informasi-dinas-perikanan"
+    ],
+    "4": [
+      "app_http_controllers_cms_cmsalbumcontroller_cmsalbumcontroller",
+      "app_http_controllers_cms_cmsalbumcontroller_cmsalbumcontroller_destroy",
+      "app_http_controllers_cms_cmsalbumcontroller_cmsalbumcontroller_index",
+      "app_http_controllers_cms_cmsalbumcontroller_cmsalbumcontroller_store",
+      "app_http_controllers_cms_cmsalbumcontroller_cmsalbumcontroller_update",
+      "app_http_controllers_cms_cmsphotocontroller_cmsphotocontroller",
+      "app_http_controllers_cms_cmsphotocontroller_cmsphotocontroller_destroy",
+      "app_http_controllers_cms_cmsphotocontroller_cmsphotocontroller_showalbumphotos",
+      "app_http_controllers_cms_cmsphotocontroller_cmsphotocontroller_store",
+      "app_http_controllers_cms_cmsvisitorstatisticcontroller",
+      "app_http_controllers_cms_cmsvisitorstatisticcontroller_cmsvisitorstatisticcontroller",
+      "app_http_controllers_cms_cmsvisitorstatisticcontroller_cmsvisitorstatisticcontroller_index",
+      "app_http_controllers_cms_cmsvisitorstatisticcontroller_cmsvisitorstatisticcontroller_live",
+      "app_http_controllers_cms_dashboardcontroller_dashboardcontroller_index",
+      "app_http_controllers_public_galleryphotocontroller_galleryphotocontroller",
+      "app_http_controllers_public_galleryphotocontroller_galleryphotocontroller_index",
+      "app_http_controllers_public_galleryphotocontroller_galleryphotocontroller_show",
+      "app_http_controllers_public_homecontroller_homecontroller_index",
+      "app_models_galleryalbum_galleryalbum",
+      "app_models_galleryphoto_galleryphoto",
+      "app_models_websitevisitor",
+      "app_models_websitevisitor_websitevisitor",
+      "app_services_visitorstatisticservice",
+      "app_services_visitorstatisticservice_visitorstatisticservice",
+      "app_services_visitorstatisticservice_visitorstatisticservice_distinctvisitor",
+      "app_services_visitorstatisticservice_visitorstatisticservice_getcmsfullstatistics",
+      "app_services_visitorstatisticservice_visitorstatisticservice_getdailychartdata",
+      "app_services_visitorstatisticservice_visitorstatisticservice_gethourlychartdatatoday",
+      "app_services_visitorstatisticservice_visitorstatisticservice_getpublicsummary",
+      "database_seeders_galleryphotoseeder_galleryphotoseeder",
+      "database_seeders_galleryphotoseeder_galleryphotoseeder_run",
+      "illuminate_foundation_testing_refreshdatabase",
+      "illuminate_foundation_testing_testcase",
+      "tests_feature_exampletest",
+      "tests_feature_exampletest_exampletest",
+      "tests_feature_exampletest_exampletest_test_the_application_returns_a_successful_response",
+      "tests_feature_visitortrackingtest",
+      "tests_feature_visitortrackingtest_visitortrackingtest",
+      "tests_feature_visitortrackingtest_visitortrackingtest_test_grafik_statistik_per_jam_menggunakan_timezone_asia_jakarta",
+      "tests_feature_visitortrackingtest_visitortrackingtest_test_skenario_1_browser_a_membuka_website_total_pengunjung_bertambah",
+      "tests_feature_visitortrackingtest_visitortrackingtest_test_skenario_2_browser_incognito_session_baru_total_pengunjung_bertambah",
+      "tests_feature_visitortrackingtest_visitortrackingtest_test_skenario_3_browser_edge_total_pengunjung_bertambah",
+      "tests_feature_visitortrackingtest_visitortrackingtest_test_skenario_4_hp_jaringan_berbeda_total_pengunjung_bertambah",
+      "tests_feature_visitortrackingtest_visitortrackingtest_test_skenario_5_refresh_berkali_kali_session_sama_tidak_bertambah_selama_cooldown",
+      "tests_testcase",
+      "tests_testcase_testcase"
+    ],
+    "5": [
+      "composer",
+      "composer_allow_plugins_pestphp_pest_plugin",
+      "composer_allow_plugins_php_http_discovery",
+      "composer_autoload",
+      "composer_autoload_dev",
+      "composer_autoload_dev_psr_4",
+      "composer_autoload_psr_4",
+      "composer_config",
+      "composer_config_allow_plugins",
+      "composer_config_optimize_autoloader",
+      "composer_config_preferred_install",
+      "composer_config_sort_packages",
+      "composer_description",
+      "composer_extra",
+      "composer_extra_laravel",
+      "composer_keywords",
+      "composer_laravel_dont_discover",
+      "composer_license",
+      "composer_minimum_stability",
+      "composer_name",
+      "composer_prefer_stable",
+      "composer_psr_4_app",
+      "composer_psr_4_database_factories",
+      "composer_psr_4_database_seeders",
+      "composer_psr_4_tests",
+      "composer_require",
+      "composer_require_dev",
+      "composer_require_dev_fakerphp_faker",
+      "composer_require_dev_laravel_pail",
+      "composer_require_dev_laravel_pint",
+      "composer_require_dev_laravel_sail",
+      "composer_require_dev_mockery_mockery",
+      "composer_require_dev_nunomaduro_collision",
+      "composer_require_dev_phpunit_phpunit",
+      "composer_require_laravel_framework",
+      "composer_require_laravel_reverb",
+      "composer_require_laravel_tinker",
+      "composer_require_php",
+      "composer_schema",
+      "composer_type",
+      "ref_framework",
+      "ref_laravel"
+    ],
+    "6": [
+      "doc:D:/kampus/magang/program/coba/4/design.md",
+      "doc:D:/kampus/magang/program/coba/4/design.md#1.-filosofi-desain",
+      "doc:D:/kampus/magang/program/coba/4/design.md#10.-responsif",
+      "doc:D:/kampus/magang/program/coba/4/design.md#11.-panduan-penggunaan-bootstrap-5",
+      "doc:D:/kampus/magang/program/coba/4/design.md#2.-color-palette",
+      "doc:D:/kampus/magang/program/coba/4/design.md#3.-tipografi",
+      "doc:D:/kampus/magang/program/coba/4/design.md#4.-spacing-&-grid",
+      "doc:D:/kampus/magang/program/coba/4/design.md#5.-komponen-ui",
+      "doc:D:/kampus/magang/program/coba/4/design.md#5.1-tombol-(button)",
+      "doc:D:/kampus/magang/program/coba/4/design.md#5.10-form-cms",
+      "doc:D:/kampus/magang/program/coba/4/design.md#5.2-kartu-(card)",
+      "doc:D:/kampus/magang/program/coba/4/design.md#5.3-badge",
+      "doc:D:/kampus/magang/program/coba/4/design.md#5.4-navbar-publik",
+      "doc:D:/kampus/magang/program/coba/4/design.md#5.5-hero/slider-beranda",
+      "doc:D:/kampus/magang/program/coba/4/design.md#5.6-footer-publik",
+      "doc:D:/kampus/magang/program/coba/4/design.md#5.7-sidebar-cms",
+      "doc:D:/kampus/magang/program/coba/4/design.md#5.8-topbar-cms",
+      "doc:D:/kampus/magang/program/coba/4/design.md#5.9-tabel-data-cms",
+      "doc:D:/kampus/magang/program/coba/4/design.md#6.-layout-halaman",
+      "doc:D:/kampus/magang/program/coba/4/design.md#6.1-layout-publik-—-beranda",
+      "doc:D:/kampus/magang/program/coba/4/design.md#6.2-layout-publik-—-daftar-berita",
+      "doc:D:/kampus/magang/program/coba/4/design.md#6.3-layout-publik-—-detail-berita",
+      "doc:D:/kampus/magang/program/coba/4/design.md#6.4-layout-cms-—-dashboard",
+      "doc:D:/kampus/magang/program/coba/4/design.md#6.5-layout-cms-—-halaman-crud-(list)",
+      "doc:D:/kampus/magang/program/coba/4/design.md#6.6-layout-cms-—-form-tambah/edit",
+      "doc:D:/kampus/magang/program/coba/4/design.md#7.-halaman-khusus",
+      "doc:D:/kampus/magang/program/coba/4/design.md#7.1-halaman-login-cms",
+      "doc:D:/kampus/magang/program/coba/4/design.md#7.2-halaman-404",
+      "doc:D:/kampus/magang/program/coba/4/design.md#7.3-halaman-dokumen-&-download",
+      "doc:D:/kampus/magang/program/coba/4/design.md#8.-ikon-&-aset",
+      "doc:D:/kampus/magang/program/coba/4/design.md#9.-animasi-&-interaksi",
+      "doc:D:/kampus/magang/program/coba/4/design.md#breakpoint-behavior",
+      "doc:D:/kampus/magang/program/coba/4/design.md#css-variables-(root)",
+      "doc:D:/kampus/magang/program/coba/4/design.md#design-guide-—-cms-portal-informasi-dinas-perikanan",
+      "doc:D:/kampus/magang/program/coba/4/design.md#font-family",
+      "doc:D:/kampus/magang/program/coba/4/design.md#grid-cms",
+      "doc:D:/kampus/magang/program/coba/4/design.md#grid-publik",
+      "doc:D:/kampus/magang/program/coba/4/design.md#sistem-spacing-(kelipatan-8px)",
+      "doc:D:/kampus/magang/program/coba/4/design.md#skala-tipografi",
+      "doc:D:/kampus/magang/program/coba/4/design.md#warna-netral",
+      "doc:D:/kampus/magang/program/coba/4/design.md#warna-status",
+      "doc:D:/kampus/magang/program/coba/4/design.md#warna-utama"
+    ],
+    "7": [
+      "app_http_controllers_cms_cmspenanggungjawabcontroller_cmspenanggungjawabcontroller",
+      "app_http_controllers_cms_cmspenanggungjawabcontroller_cmspenanggungjawabcontroller_destroy",
+      "app_http_controllers_cms_cmspenanggungjawabcontroller_cmspenanggungjawabcontroller_index",
+      "app_http_controllers_cms_cmspenanggungjawabcontroller_cmspenanggungjawabcontroller_store",
+      "app_http_controllers_cms_cmspenanggungjawabcontroller_cmspenanggungjawabcontroller_update",
+      "app_http_controllers_cms_cmsservicecategorycontroller_cmsservicecategorycontroller",
+      "app_http_controllers_cms_cmsservicecategorycontroller_cmsservicecategorycontroller_destroy",
+      "app_http_controllers_cms_cmsservicecategorycontroller_cmsservicecategorycontroller_index",
+      "app_http_controllers_cms_cmsservicecategorycontroller_cmsservicecategorycontroller_store",
+      "app_http_controllers_cms_cmsservicecategorycontroller_cmsservicecategorycontroller_update",
+      "app_http_controllers_cms_cmsservicecontroller_cmsservicecontroller",
+      "app_http_controllers_cms_cmsservicecontroller_cmsservicecontroller_create",
+      "app_http_controllers_cms_cmsservicecontroller_cmsservicecontroller_destroy",
+      "app_http_controllers_cms_cmsservicecontroller_cmsservicecontroller_edit",
+      "app_http_controllers_cms_cmsservicecontroller_cmsservicecontroller_index",
+      "app_http_controllers_cms_cmsservicecontroller_cmsservicecontroller_store",
+      "app_http_controllers_cms_cmsservicecontroller_cmsservicecontroller_toggleactive",
+      "app_http_controllers_cms_cmsservicecontroller_cmsservicecontroller_update",
+      "app_http_controllers_public_servicecontroller_servicecontroller",
+      "app_http_controllers_public_servicecontroller_servicecontroller_bycategory",
+      "app_http_controllers_public_servicecontroller_servicecontroller_index",
+      "app_http_controllers_public_servicecontroller_servicecontroller_show",
+      "app_models_galleryalbum_galleryalbum_photos",
+      "app_models_newscategory_newscategory_news",
+      "app_models_penanggungjawab_penanggungjawab",
+      "app_models_penanggungjawab_penanggungjawab_getformattedwanumberattribute",
+      "app_models_penanggungjawab_penanggungjawab_getwalinkattribute",
+      "app_models_penanggungjawab_penanggungjawab_services",
+      "app_models_penanggungjawab_penanggungjawab_serviceslist",
+      "app_models_service_service",
+      "app_models_service_service_penanggungjawab",
+      "app_models_service_service_penanggungjawablist",
+      "app_models_service_service_scopeactive",
+      "app_models_servicecategory_servicecategory",
+      "app_models_servicecategory_servicecategory_services",
+      "app_models_user_user_activitylogs",
+      "app_models_user_user_news",
+      "database_seeders_penanggungjawabseeder_penanggungjawabseeder",
+      "database_seeders_penanggungjawabseeder_penanggungjawabseeder_run",
+      "illuminate_database_eloquent_relations_hasmany"
+    ],
+    "8": [
+      "database_seeders_bannerseeder",
+      "database_seeders_bannerseeder_bannerseeder",
+      "database_seeders_bannerseeder_bannerseeder_run",
+      "database_seeders_contactseeder",
+      "database_seeders_contactseeder_contactseeder",
+      "database_seeders_contactseeder_contactseeder_run",
+      "database_seeders_databaseseeder",
+      "database_seeders_databaseseeder_databaseseeder",
+      "database_seeders_databaseseeder_databaseseeder_run",
+      "database_seeders_documentseeder",
+      "database_seeders_documentseeder_documentseeder",
+      "database_seeders_documentseeder_documentseeder_run",
+      "database_seeders_galleryalbumseeder",
+      "database_seeders_galleryalbumseeder_galleryalbumseeder",
+      "database_seeders_galleryalbumseeder_galleryalbumseeder_run",
+      "database_seeders_galleryvideoseeder",
+      "database_seeders_galleryvideoseeder_galleryvideoseeder",
+      "database_seeders_galleryvideoseeder_galleryvideoseeder_run",
+      "database_seeders_newscategoryseeder",
+      "database_seeders_newscategoryseeder_newscategoryseeder",
+      "database_seeders_newscategoryseeder_newscategoryseeder_run",
+      "database_seeders_organizationmemberseeder",
+      "database_seeders_organizationmemberseeder_organizationmemberseeder",
+      "database_seeders_organizationmemberseeder_organizationmemberseeder_run",
+      "database_seeders_profilecontentseeder",
+      "database_seeders_profilecontentseeder_profilecontentseeder",
+      "database_seeders_profilecontentseeder_profilecontentseeder_run",
+      "database_seeders_servicecategoryseeder",
+      "database_seeders_servicecategoryseeder_servicecategoryseeder",
+      "database_seeders_servicecategoryseeder_servicecategoryseeder_run",
+      "database_seeders_serviceseeder",
+      "database_seeders_serviceseeder_serviceseeder",
+      "database_seeders_serviceseeder_serviceseeder_run",
+      "database_seeders_settingseeder",
+      "database_seeders_settingseeder_settingseeder",
+      "database_seeders_settingseeder_settingseeder_run",
+      "database_seeders_userseeder",
+      "database_seeders_userseeder_userseeder",
+      "database_seeders_userseeder_userseeder_run",
+      "illuminate_database_seeder"
+    ],
+    "9": [
+      "app_http_controllers_cms_cmsnewscategorycontroller_cmsnewscategorycontroller",
+      "app_http_controllers_cms_cmsnewscategorycontroller_cmsnewscategorycontroller_destroy",
+      "app_http_controllers_cms_cmsnewscategorycontroller_cmsnewscategorycontroller_index",
+      "app_http_controllers_cms_cmsnewscategorycontroller_cmsnewscategorycontroller_store",
+      "app_http_controllers_cms_cmsnewscategorycontroller_cmsnewscategorycontroller_update",
+      "app_http_controllers_cms_cmsnewscontroller_cmsnewscontroller",
+      "app_http_controllers_cms_cmsnewscontroller_cmsnewscontroller_create",
+      "app_http_controllers_cms_cmsnewscontroller_cmsnewscontroller_destroy",
+      "app_http_controllers_cms_cmsnewscontroller_cmsnewscontroller_edit",
+      "app_http_controllers_cms_cmsnewscontroller_cmsnewscontroller_index",
+      "app_http_controllers_cms_cmsnewscontroller_cmsnewscontroller_store",
+      "app_http_controllers_cms_cmsnewscontroller_cmsnewscontroller_togglestatus",
+      "app_http_controllers_cms_cmsnewscontroller_cmsnewscontroller_update",
+      "app_http_controllers_public_newscontroller_newscontroller",
+      "app_http_controllers_public_newscontroller_newscontroller_index",
+      "app_http_controllers_public_newscontroller_newscontroller_show",
+      "app_models_activitylog_activitylog_user",
+      "app_models_galleryphoto_galleryphoto_album",
+      "app_models_news_news",
+      "app_models_news_news_author",
+      "app_models_news_news_newscategory",
+      "app_models_news_news_scopepublished",
+      "app_models_newscategory_newscategory",
+      "app_models_service_service_servicecategory",
+      "database_seeders_newsseeder_newsseeder",
+      "database_seeders_newsseeder_newsseeder_run",
+      "illuminate_database_eloquent_relations_belongsto"
+    ],
+    "10": [
+      "composer_scripts",
+      "composer_scripts_dev",
+      "composer_scripts_post_autoload_dump",
+      "composer_scripts_post_create_project_cmd",
+      "composer_scripts_post_root_package_install",
+      "composer_scripts_post_update_cmd",
+      "composer_scripts_pre_package_uninstall",
+      "composer_scripts_setup",
+      "composer_scripts_test",
+      "ref_composer_config_disableprocesstimeout",
+      "ref_composer_install",
+      "ref_illuminate_foundation_composerscripts_postautoloaddump",
+      "ref_illuminate_foundation_composerscripts_prepackageuninstall",
+      "ref_npm_install",
+      "ref_npm_run_build",
+      "ref_npx_concurrently_c_93c5fd_c4b5fd_fb7185_fdba74_php_artisan_serve_php_artisan_queue_listen_tries_1_timeout_0_php_artisan_pail_timeout_0_npm_run_dev_names_server_queue_logs_vite_kill_others",
+      "ref_php_artisan_config_clear_ansi",
+      "ref_php_artisan_key_generate",
+      "ref_php_artisan_key_generate_ansi",
+      "ref_php_artisan_migrate_force",
+      "ref_php_artisan_migrate_graceful_ansi",
+      "ref_php_artisan_package_discover_ansi",
+      "ref_php_artisan_test",
+      "ref_php_artisan_vendor_publish_tag_laravel_assets_ansi_force",
+      "ref_php_r_file_exists_database_database_sqlite_touch_database_database_sqlite",
+      "ref_php_r_file_exists_env_copy_env_example_env"
+    ],
+    "11": [
+      "axios",
+      "concurrently",
+      "laravel_vite_plugin",
+      "package",
+      "package_devdependencies",
+      "package_devdependencies_axios",
+      "package_devdependencies_concurrently",
+      "package_devdependencies_laravel_vite_plugin",
+      "package_devdependencies_tailwindcss",
+      "package_devdependencies_tailwindcss_vite",
+      "package_devdependencies_vite",
+      "package_private",
+      "package_schema",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_type",
+      "tailwindcss",
+      "tailwindcss_vite",
+      "vite"
+    ],
+    "12": [
+      "app_http_middleware_cmsauthmiddleware",
+      "app_http_middleware_cmsauthmiddleware_cmsauthmiddleware",
+      "app_http_middleware_cmsauthmiddleware_cmsauthmiddleware_handle",
+      "app_http_middleware_rolemiddleware",
+      "app_http_middleware_rolemiddleware_rolemiddleware",
+      "app_http_middleware_rolemiddleware_rolemiddleware_handle",
+      "app_http_middleware_trackvisitor",
+      "app_http_middleware_trackvisitor_trackvisitor",
+      "app_http_middleware_trackvisitor_trackvisitor_handle",
+      "app_http_middleware_trackvisitor_trackvisitor_parsebrowser",
+      "app_http_middleware_trackvisitor_trackvisitor_parsedevice",
+      "app_http_middleware_trackvisitor_trackvisitor_parseos",
+      "app_http_middleware_trackvisitor_trackvisitor_resolvepagename",
+      "bootstrap_app",
+      "closure",
+      "symfony_component_httpfoundation_response"
+    ],
+    "13": [
+      "app_http_controllers_cms_cmssettingcontroller_cmssettingcontroller",
+      "app_http_controllers_cms_cmssettingcontroller_cmssettingcontroller_index",
+      "app_http_controllers_cms_cmssettingcontroller_cmssettingcontroller_update",
+      "app_http_controllers_public_contactcontroller_contactcontroller",
+      "app_http_controllers_public_contactcontroller_contactcontroller_index",
+      "app_http_controllers_public_contactcontroller_contactcontroller_store",
+      "app_models_activitylog_activitylog_record",
+      "app_models_profilecontent_profilecontent_getcontent",
+      "app_models_setting_setting",
+      "app_models_setting_setting_get",
+      "app_models_setting_setting_set",
+      "self"
+    ],
+    "14": [
+      "app_http_controllers_cms_cmsvideocontroller_cmsvideocontroller",
+      "app_http_controllers_cms_cmsvideocontroller_cmsvideocontroller_destroy",
+      "app_http_controllers_cms_cmsvideocontroller_cmsvideocontroller_index",
+      "app_http_controllers_cms_cmsvideocontroller_cmsvideocontroller_store",
+      "app_http_controllers_cms_cmsvideocontroller_cmsvideocontroller_update",
+      "app_http_controllers_public_galleryvideocontroller_galleryvideocontroller_index",
+      "app_models_galleryvideo_galleryvideo",
+      "app_models_galleryvideo_galleryvideo_getinstagramembedurlattribute",
+      "app_models_galleryvideo_galleryvideo_getvideofileurlattribute",
+      "app_models_galleryvideo_galleryvideo_getyoutubeembedurlattribute",
+      "app_models_galleryvideo_galleryvideo_getyoutubethumbnailattribute"
+    ],
+    "15": [
+      "app_mail_resetpasswordmail",
+      "app_mail_resetpasswordmail_resetpasswordmail",
+      "app_mail_resetpasswordmail_resetpasswordmail_attachments",
+      "app_mail_resetpasswordmail_resetpasswordmail_construct",
+      "app_mail_resetpasswordmail_resetpasswordmail_content",
+      "app_mail_resetpasswordmail_resetpasswordmail_envelope",
+      "illuminate_bus_queueable",
+      "illuminate_mail_mailable",
+      "illuminate_mail_mailables_content",
+      "illuminate_mail_mailables_envelope",
+      "illuminate_queue_serializesmodels"
+    ],
+    "16": [
+      "doc:D:/kampus/magang/program/coba/4/README.md",
+      "doc:D:/kampus/magang/program/coba/4/README.md#about-laravel",
+      "doc:D:/kampus/magang/program/coba/4/README.md#code-of-conduct",
+      "doc:D:/kampus/magang/program/coba/4/README.md#contributing",
+      "doc:D:/kampus/magang/program/coba/4/README.md#laravel-sponsors",
+      "doc:D:/kampus/magang/program/coba/4/README.md#learning-laravel",
+      "doc:D:/kampus/magang/program/coba/4/README.md#license",
+      "doc:D:/kampus/magang/program/coba/4/README.md#premium-partners",
+      "doc:D:/kampus/magang/program/coba/4/README.md#security-vulnerabilities"
+    ],
+    "17": [
+      "app_providers_appserviceprovider",
+      "app_providers_appserviceprovider_appserviceprovider",
+      "app_providers_appserviceprovider_appserviceprovider_boot",
+      "app_providers_appserviceprovider_appserviceprovider_register",
+      "bootstrap_providers",
+      "illuminate_support_serviceprovider"
+    ],
+    "18": [
+      "database_factories_userfactory",
+      "database_factories_userfactory_userfactory",
+      "database_factories_userfactory_userfactory_definition",
+      "database_factories_userfactory_userfactory_unverified",
+      "illuminate_database_eloquent_factories_factory",
+      "static"
+    ],
+    "19": [
+      "phpunit_framework_testcase",
+      "tests_unit_exampletest",
+      "tests_unit_exampletest_exampletest",
+      "tests_unit_exampletest_exampletest_test_that_true_is_true"
+    ],
+    "20": [
+      "cms_partials_sidebar",
+      "cms_partials_topbar",
+      "resources_views_layouts_cms_blade"
+    ],
+    "21": [
+      "database_migrations_0001_01_01_000000_create_users_table",
+      "database_migrations_0001_01_01_000000_create_users_table_down",
+      "database_migrations_0001_01_01_000000_create_users_table_up"
+    ],
+    "22": [
+      "database_migrations_0001_01_01_000001_create_cache_table",
+      "database_migrations_0001_01_01_000001_create_cache_table_down",
+      "database_migrations_0001_01_01_000001_create_cache_table_up"
+    ],
+    "23": [
+      "database_migrations_0001_01_01_000002_create_jobs_table",
+      "database_migrations_0001_01_01_000002_create_jobs_table_down",
+      "database_migrations_0001_01_01_000002_create_jobs_table_up"
+    ],
+    "24": [
+      "database_migrations_2026_01_01_000001_create_settings_table",
+      "database_migrations_2026_01_01_000001_create_settings_table_down",
+      "database_migrations_2026_01_01_000001_create_settings_table_up"
+    ],
+    "25": [
+      "database_migrations_2026_01_01_000002_create_activity_logs_table",
+      "database_migrations_2026_01_01_000002_create_activity_logs_table_down",
+      "database_migrations_2026_01_01_000002_create_activity_logs_table_up"
+    ],
+    "26": [
+      "database_migrations_2026_01_01_000003_create_news_categories_table",
+      "database_migrations_2026_01_01_000003_create_news_categories_table_down",
+      "database_migrations_2026_01_01_000003_create_news_categories_table_up"
+    ],
+    "27": [
+      "database_migrations_2026_01_01_000004_create_news_table",
+      "database_migrations_2026_01_01_000004_create_news_table_down",
+      "database_migrations_2026_01_01_000004_create_news_table_up"
+    ],
+    "28": [
+      "database_migrations_2026_01_01_000005_create_service_categories_table",
+      "database_migrations_2026_01_01_000005_create_service_categories_table_down",
+      "database_migrations_2026_01_01_000005_create_service_categories_table_up"
+    ],
+    "29": [
+      "database_migrations_2026_01_01_000006_create_services_table",
+      "database_migrations_2026_01_01_000006_create_services_table_down",
+      "database_migrations_2026_01_01_000006_create_services_table_up"
+    ],
+    "30": [
+      "database_migrations_2026_01_01_000007_create_gallery_albums_table",
+      "database_migrations_2026_01_01_000007_create_gallery_albums_table_down",
+      "database_migrations_2026_01_01_000007_create_gallery_albums_table_up"
+    ],
+    "31": [
+      "database_migrations_2026_01_01_000008_create_gallery_photos_table",
+      "database_migrations_2026_01_01_000008_create_gallery_photos_table_down",
+      "database_migrations_2026_01_01_000008_create_gallery_photos_table_up"
+    ],
+    "32": [
+      "database_migrations_2026_01_01_000009_create_gallery_videos_table",
+      "database_migrations_2026_01_01_000009_create_gallery_videos_table_down",
+      "database_migrations_2026_01_01_000009_create_gallery_videos_table_up"
+    ],
+    "33": [
+      "database_migrations_2026_01_01_000010_create_documents_table",
+      "database_migrations_2026_01_01_000010_create_documents_table_down",
+      "database_migrations_2026_01_01_000010_create_documents_table_up"
+    ],
+    "34": [
+      "database_migrations_2026_01_01_000011_create_banners_table",
+      "database_migrations_2026_01_01_000011_create_banners_table_down",
+      "database_migrations_2026_01_01_000011_create_banners_table_up"
+    ],
+    "35": [
+      "database_migrations_2026_01_01_000012_create_profile_contents_table",
+      "database_migrations_2026_01_01_000012_create_profile_contents_table_down",
+      "database_migrations_2026_01_01_000012_create_profile_contents_table_up"
+    ],
+    "36": [
+      "database_migrations_2026_01_01_000013_create_organization_members_table",
+      "database_migrations_2026_01_01_000013_create_organization_members_table_down",
+      "database_migrations_2026_01_01_000013_create_organization_members_table_up"
+    ],
+    "37": [
+      "database_migrations_2026_01_01_000014_create_contacts_table",
+      "database_migrations_2026_01_01_000014_create_contacts_table_down",
+      "database_migrations_2026_01_01_000014_create_contacts_table_up"
+    ],
+    "38": [
+      "database_migrations_2026_01_01_000016_create_penanggung_jawab_table",
+      "database_migrations_2026_01_01_000016_create_penanggung_jawab_table_down",
+      "database_migrations_2026_01_01_000016_create_penanggung_jawab_table_up"
+    ],
+    "39": [
+      "database_migrations_2026_01_01_000017_add_penanggung_jawab_id_to_services_table",
+      "database_migrations_2026_01_01_000017_add_penanggung_jawab_id_to_services_table_down",
+      "database_migrations_2026_01_01_000017_add_penanggung_jawab_id_to_services_table_up"
+    ],
+    "40": [
+      "database_migrations_2026_01_01_000018_create_penanggung_jawab_service_table",
+      "database_migrations_2026_01_01_000018_create_penanggung_jawab_service_table_down",
+      "database_migrations_2026_01_01_000018_create_penanggung_jawab_service_table_up"
+    ],
+    "41": [
+      "database_migrations_2026_01_01_000019_add_is_root_super_admin_to_users_table",
+      "database_migrations_2026_01_01_000019_add_is_root_super_admin_to_users_table_down",
+      "database_migrations_2026_01_01_000019_add_is_root_super_admin_to_users_table_up"
+    ],
+    "42": [
+      "database_migrations_2026_07_28_000001_add_source_type_and_video_file_to_gallery_videos_table",
+      "database_migrations_2026_07_28_000001_add_source_type_and_video_file_to_gallery_videos_table_down",
+      "database_migrations_2026_07_28_000001_add_source_type_and_video_file_to_gallery_videos_table_up"
+    ],
+    "43": [
+      "database_migrations_2026_07_30_000001_add_views_count_to_news_table",
+      "database_migrations_2026_07_30_000001_add_views_count_to_news_table_down",
+      "database_migrations_2026_07_30_000001_add_views_count_to_news_table_up"
+    ],
+    "44": [
+      "database_migrations_2026_07_30_000002_create_website_visitors_table",
+      "database_migrations_2026_07_30_000002_create_website_visitors_table_down",
+      "database_migrations_2026_07_30_000002_create_website_visitors_table_up"
+    ],
+    "45": [
+      "partials_footer",
+      "partials_navbar",
+      "resources_views_layouts_public_blade"
+    ],
+    "46": [
+      "artisan",
+      "routes_console"
+    ],
+    "47": [
+      "resources_js_app",
+      "resources_js_bootstrap"
+    ],
+    "48": [
+      "resources_views_public_contact_index_blade",
+      "resources_views_public_contact_index_blade_php_partials_breadcrumb"
+    ],
+    "49": [
+      "resources_views_public_document_index_blade",
+      "resources_views_public_document_index_blade_php_partials_breadcrumb"
+    ],
+    "50": [
+      "resources_views_public_gallery_photo_blade",
+      "resources_views_public_gallery_photo_blade_php_partials_breadcrumb"
+    ],
+    "51": [
+      "resources_views_public_gallery_photo_show_blade",
+      "resources_views_public_gallery_photo_show_blade_php_partials_breadcrumb"
+    ],
+    "52": [
+      "resources_views_public_gallery_video_blade",
+      "resources_views_public_gallery_video_blade_php_partials_breadcrumb"
+    ],
+    "53": [
+      "resources_views_public_news_index_blade",
+      "resources_views_public_news_index_blade_php_partials_breadcrumb"
+    ],
+    "54": [
+      "resources_views_public_news_show_blade",
+      "resources_views_public_news_show_blade_php_partials_breadcrumb"
+    ],
+    "55": [
+      "resources_views_public_profile_index_blade",
+      "resources_views_public_profile_index_blade_php_partials_breadcrumb"
+    ],
+    "56": [
+      "resources_views_public_service_index_blade",
+      "resources_views_public_service_index_blade_php_partials_breadcrumb"
+    ],
+    "57": [
+      "resources_views_public_service_show_blade",
+      "resources_views_public_service_show_blade_php_partials_breadcrumb"
+    ],
+    "58": [
+      "config_app"
+    ],
+    "59": [
+      "config_broadcasting"
+    ],
+    "60": [
+      "config_database"
+    ],
+    "61": [
+      "config_filesystems"
+    ],
+    "62": [
+      "config_logging"
+    ],
+    "63": [
+      "config_queue"
+    ],
+    "64": [
+      "config_reverb"
+    ],
+    "65": [
+      "config_services"
+    ],
+    "66": [
+      "config_session"
+    ],
+    "67": [
+      "doc:D:/kampus/magang/program/coba/4/public/robots.txt"
+    ],
+    "68": [
+      "public_index"
+    ],
+    "69": [
+      "resources_views_auth_forgot_password_blade"
+    ],
+    "70": [
+      "resources_views_auth_login_blade"
+    ],
+    "71": [
+      "resources_views_auth_reset_password_blade"
+    ],
+    "72": [
+      "resources_views_auth_reset_password_expired_blade"
+    ],
+    "73": [
+      "resources_views_cms_activity_log_index_blade"
+    ],
+    "74": [
+      "resources_views_cms_banner_index_blade"
+    ],
+    "75": [
+      "resources_views_cms_contact_index_blade"
+    ],
+    "76": [
+      "resources_views_cms_contact_show_blade"
+    ],
+    "77": [
+      "resources_views_cms_dashboard_blade"
+    ],
+    "78": [
+      "resources_views_cms_document_index_blade"
+    ],
+    "79": [
+      "resources_views_cms_gallery_album_blade"
+    ],
+    "80": [
+      "resources_views_cms_gallery_photo_blade"
+    ],
+    "81": [
+      "resources_views_cms_gallery_video_index_blade"
+    ],
+    "82": [
+      "resources_views_cms_news_category_index_blade"
+    ],
+    "83": [
+      "resources_views_cms_news_create_blade"
+    ],
+    "84": [
+      "resources_views_cms_news_edit_blade"
+    ],
+    "85": [
+      "resources_views_cms_news_index_blade"
+    ],
+    "86": [
+      "resources_views_cms_partials_sidebar_blade"
+    ],
+    "87": [
+      "resources_views_cms_partials_topbar_blade"
+    ],
+    "88": [
+      "resources_views_cms_penanggung_jawab_index_blade"
+    ],
+    "89": [
+      "resources_views_cms_profile_index_blade"
+    ],
+    "90": [
+      "resources_views_cms_role_index_blade"
+    ],
+    "91": [
+      "resources_views_cms_service_category_index_blade"
+    ],
+    "92": [
+      "resources_views_cms_service_create_blade"
+    ],
+    "93": [
+      "resources_views_cms_service_edit_blade"
+    ],
+    "94": [
+      "resources_views_cms_service_index_blade"
+    ],
+    "95": [
+      "resources_views_cms_setting_index_blade"
+    ],
+    "96": [
+      "resources_views_cms_statistics_index_blade"
+    ],
+    "97": [
+      "resources_views_cms_user_create_blade"
+    ],
+    "98": [
+      "resources_views_cms_user_edit_blade"
+    ],
+    "99": [
+      "resources_views_cms_user_index_blade"
+    ],
+    "100": [
+      "resources_views_components_breadcrumb_blade"
+    ],
+    "101": [
+      "resources_views_emails_reset_password_blade"
+    ],
+    "102": [
+      "resources_views_partials_breadcrumb_blade"
+    ],
+    "103": [
+      "resources_views_partials_footer_blade"
+    ],
+    "104": [
+      "resources_views_partials_navbar_blade"
+    ],
+    "105": [
+      "resources_views_public_home_index_blade"
+    ],
+    "106": [
+      "resources_views_welcome_blade"
+    ],
+    "107": [
+      "routes_channels"
+    ],
+    "108": [
+      "vite_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.023529411764705882,
+    "1": 0.07716049382716049,
+    "2": 0.06561085972850679,
+    "3": 0.038461538461538464,
+    "4": 0.07053140096618357,
+    "5": 0.047619047619047616,
+    "6": 0.047619047619047616,
+    "7": 0.07564102564102564,
+    "8": 0.06666666666666667,
+    "9": 0.1168091168091168,
+    "10": 0.08,
+    "11": 0.1,
+    "12": 0.23333333333333334,
+    "13": 0.19696969696969696,
+    "14": 0.2545454545454545,
+    "15": 0.2727272727272727,
+    "16": 0.2222222222222222,
+    "17": 0.4,
+    "18": 0.4666666666666667,
+    "19": 0.6666666666666666,
+    "20": 0.6666666666666666,
+    "21": 0.6666666666666666,
+    "22": 0.6666666666666666,
+    "23": 0.6666666666666666,
+    "24": 0.6666666666666666,
+    "25": 0.6666666666666666,
+    "26": 0.6666666666666666,
+    "27": 0.6666666666666666,
+    "28": 0.6666666666666666,
+    "29": 0.6666666666666666,
+    "30": 0.6666666666666666,
+    "31": 0.6666666666666666,
+    "32": 0.6666666666666666,
+    "33": 0.6666666666666666,
+    "34": 0.6666666666666666,
+    "35": 0.6666666666666666,
+    "36": 0.6666666666666666,
+    "37": 0.6666666666666666,
+    "38": 0.6666666666666666,
+    "39": 0.6666666666666666,
+    "40": 0.6666666666666666,
+    "41": 0.6666666666666666,
+    "42": 0.6666666666666666,
+    "43": 0.6666666666666666,
+    "44": 0.6666666666666666,
+    "45": 0.6666666666666666,
+    "46": 1.0,
+    "47": 1.0,
+    "48": 1.0,
+    "49": 1.0,
+    "50": 1.0,
+    "51": 1.0,
+    "52": 1.0,
+    "53": 1.0,
+    "54": 1.0,
+    "55": 1.0,
+    "56": 1.0,
+    "57": 1.0,
+    "58": 1.0,
+    "59": 1.0,
+    "60": 1.0,
+    "61": 1.0,
+    "62": 1.0,
+    "63": 1.0,
+    "64": 1.0,
+    "65": 1.0,
+    "66": 1.0,
+    "67": 1.0,
+    "68": 1.0,
+    "69": 1.0,
+    "70": 1.0,
+    "71": 1.0,
+    "72": 1.0,
+    "73": 1.0,
+    "74": 1.0,
+    "75": 1.0,
+    "76": 1.0,
+    "77": 1.0,
+    "78": 1.0,
+    "79": 1.0,
+    "80": 1.0,
+    "81": 1.0,
+    "82": 1.0,
+    "83": 1.0,
+    "84": 1.0,
+    "85": 1.0,
+    "86": 1.0,
+    "87": 1.0,
+    "88": 1.0,
+    "89": 1.0,
+    "90": 1.0,
+    "91": 1.0,
+    "92": 1.0,
+    "93": 1.0,
+    "94": 1.0,
+    "95": 1.0,
+    "96": 1.0,
+    "97": 1.0,
+    "98": 1.0,
+    "99": 1.0,
+    "100": 1.0,
+    "101": 1.0,
+    "102": 1.0,
+    "103": 1.0,
+    "104": 1.0,
+    "105": 1.0,
+    "106": 1.0,
+    "107": 1.0,
+    "108": 1.0
+  },
+  "gods": [
+    {
+      "id": "app_http_controllers_controller_controller",
+      "label": "Controller",
+      "degree": 59
+    },
+    {
+      "id": "app_models_activitylog_activitylog",
+      "label": "ActivityLog",
+      "degree": 57
+    },
+    {
+      "id": "app_models_user_user",
+      "label": "User",
+      "degree": 32
+    },
+    {
+      "id": "app_models_news_news",
+      "label": "News",
+      "degree": 17
+    },
+    {
+      "id": "app_models_service_service",
+      "label": "Service",
+      "degree": 17
+    },
+    {
+      "id": "app_models_galleryalbum_galleryalbum",
+      "label": "GalleryAlbum",
+      "degree": 14
+    },
+    {
+      "id": "app_models_newscategory_newscategory",
+      "label": "NewsCategory",
+      "degree": 14
+    },
+    {
+      "id": "app_models_penanggungjawab_penanggungjawab",
+      "label": "PenanggungJawab",
+      "degree": 14
+    },
+    {
+      "id": "app_models_servicecategory_servicecategory",
+      "label": "ServiceCategory",
+      "degree": 14
+    },
+    {
+      "id": "app_models_galleryvideo_galleryvideo",
+      "label": "GalleryVideo",
+      "degree": 13
+    }
+  ],
+  "surprises": [
+    {
+      "source": "AuthController",
+      "target": "Controller",
+      "source_files": [
+        "app/Http/Controllers/Cms/AuthController.php",
+        "app/Http/Controllers/Controller.php"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "inherits",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "CmsActivityLogController",
+      "target": "Controller",
+      "source_files": [
+        "app/Http/Controllers/Cms/CmsActivityLogController.php",
+        "app/Http/Controllers/Controller.php"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "inherits",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "CmsAlbumController",
+      "target": "Controller",
+      "source_files": [
+        "app/Http/Controllers/Cms/CmsAlbumController.php",
+        "app/Http/Controllers/Controller.php"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "inherits",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "CmsBannerController",
+      "target": "Controller",
+      "source_files": [
+        "app/Http/Controllers/Cms/CmsBannerController.php",
+        "app/Http/Controllers/Controller.php"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "inherits",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "CmsContactController",
+      "target": "Controller",
+      "source_files": [
+        "app/Http/Controllers/Cms/CmsContactController.php",
+        "app/Http/Controllers/Controller.php"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "inherits",
+      "why": "bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `Controller` connect `Community 1` to `Community 2`, `Community 4`, `Community 7`, `Community 9`, `Community 13`, `Community 14`?",
+      "why": "High betweenness centrality (0.029) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `User` connect `Community 2` to `Community 1`, `Community 7`, `Community 8`, `Community 9`, `Community 15`?",
+      "why": "High betweenness centrality (0.028) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `ActivityLog` connect `Community 2` to `Community 1`, `Community 4`, `Community 7`, `Community 9`, `Community 13`, `Community 14`?",
+      "why": "High betweenness centrality (0.027) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 52 inferred relationships involving `ActivityLog` (e.g. with `.login()` and `.logout()`) actually correct?",
+      "why": "`ActivityLog` has 52 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 12 inferred relationships involving `User` (e.g. with `.login()` and `.index()`) actually correct?",
+      "why": "`User` has 12 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `$schema`, `name`, `type` to the rest of the system?",
+      "why": "255 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.023529411764705882 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

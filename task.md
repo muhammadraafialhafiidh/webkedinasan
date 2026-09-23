@@ -96,7 +96,7 @@
 ### 2.3 Seeder
 
 - [ ] `UserSeeder` — 2 akun: Super Admin (`superadmin@perikanan.go.id`) & Admin (`admin@perikanan.go.id`), password `Password123` (bcrypt)
-- [ ] `SettingSeeder` — 18 key pengaturan: nama_website, tagline, deskripsi, email, telepon, fax, alamat, jam_operasional, logo, favicon, facebook_url, instagram_url, youtube_url, twitter_url, teks_footer, google_maps_embed, statistik_nelayan, statistik_produksi, statistik_pokdakan, statistik_layanan
+- [ ] `SettingSeeder` — 14 key pengaturan: nama_website, tagline, deskripsi, email, telepon, fax, alamat, jam_operasional, logo, favicon, facebook_url, instagram_url, youtube_url, twitter_url, teks_footer, google_maps_embed
 - [ ] `ProfileContentSeeder` — 4 key konten: sejarah, visi, misi, tupoksi (konten HTML placeholder)
 - [ ] `OrganizationMemberSeeder` — 6 anggota struktur organisasi (Kepala Dinas s/d Kasubbag) dengan foto placeholder default
 - [ ] `NewsCategorySeeder` — 5 kategori: Informasi, Kegiatan, Pengumuman, Program, Berita Dinas

@@ -8,6 +8,7 @@ use App\Models\PenanggungJawab;
 use App\Models\Service;
 use App\Models\ServiceCategory;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
@@ -54,7 +55,6 @@ class CmsServiceController extends Controller
             'cost' => 'nullable|string|max:150',
             'product' => 'nullable|string|max:255',
             'icon' => 'nullable|image|mimes:jpeg,png,jpg,svg|max:10240',
-            'order' => 'nullable|integer',
             'is_active' => 'required|boolean',
             'penanggung_jawab_ids' => 'nullable|array',
             'penanggung_jawab_ids.*' => 'nullable|exists:penanggung_jawab,id',
@@ -79,32 +79,40 @@ class CmsServiceController extends Controller
             $count++;
         }
 
-        $service = Service::create([
-            'service_category_id' => $request->service_category_id,
-            'title' => $request->title,
-            'slug' => $slug,
-            'description' => $request->description,
-            'requirements' => $request->requirements,
-            'procedure' => $request->procedure,
-            'duration' => $request->duration,
-            'cost' => $request->cost,
-            'product' => $request->product,
-            'icon' => $iconPath ?? 'assets/images/service-icon-default.png',
-            'order' => $request->order ?? 0,
-            'is_active' => $request->is_active,
-        ]);
+        $service = DB::transaction(function () use ($request, $slug, $iconPath) {
+            // Geser seluruh urutan layanan yang ada ke bawah (+1)
+            Service::query()->increment('order');
 
-        // Sync Multi Officers with Keterangan
-        $syncData = [];
-        if ($request->has('penanggung_jawab_ids') && is_array($request->penanggung_jawab_ids)) {
-            foreach ($request->penanggung_jawab_ids as $idx => $pjId) {
-                if (!empty($pjId)) {
-                    $ket = $request->penanggung_jawab_keterangans[$idx] ?? null;
-                    $syncData[$pjId] = ['keterangan' => $ket];
+            // Simpan layanan baru di posisi paling atas (order = 0)
+            $service = Service::create([
+                'service_category_id' => $request->service_category_id,
+                'title' => $request->title,
+                'slug' => $slug,
+                'description' => $request->description,
+                'requirements' => $request->requirements,
+                'procedure' => $request->procedure,
+                'duration' => $request->duration,
+                'cost' => $request->cost,
+                'product' => $request->product,
+                'icon' => $iconPath ?? 'assets/images/service-icon-default.png',
+                'order' => 0,
+                'is_active' => $request->is_active,
+            ]);
+
+            // Sync Multi Officers with Keterangan
+            $syncData = [];
+            if ($request->has('penanggung_jawab_ids') && is_array($request->penanggung_jawab_ids)) {
+                foreach ($request->penanggung_jawab_ids as $idx => $pjId) {
+                    if (!empty($pjId)) {
+                        $ket = $request->penanggung_jawab_keterangans[$idx] ?? null;
+                        $syncData[$pjId] = ['keterangan' => $ket];
+                    }
                 }
             }
-        }
-        $service->penanggungJawabList()->sync($syncData);
+            $service->penanggungJawabList()->sync($syncData);
+
+            return $service;
+        });
 
         ActivityLog::record('create', 'Layanan', "Menambahkan layanan baru: {$service->title}");
 
@@ -133,7 +141,6 @@ class CmsServiceController extends Controller
             'cost' => 'nullable|string|max:150',
             'product' => 'nullable|string|max:255',
             'icon' => 'nullable|image|mimes:jpeg,png,jpg,svg|max:10240',
-            'order' => 'nullable|integer',
             'is_active' => 'required|boolean',
             'penanggung_jawab_ids' => 'nullable|array',
             'penanggung_jawab_ids.*' => 'nullable|exists:penanggung_jawab,id',
@@ -167,7 +174,7 @@ class CmsServiceController extends Controller
         $service->duration = $request->duration;
         $service->cost = $request->cost;
         $service->product = $request->product;
-        $service->order = $request->order ?? 0;
+        // Posisi order tetap dipertahankan tanpa perubahan saat edit
         $service->is_active = $request->is_active;
         $service->save();
 
@@ -192,12 +199,23 @@ class CmsServiceController extends Controller
     {
         $service = Service::findOrFail($id);
         $title = $service->title;
+        $iconPath = $service->icon;
 
-        if ($service->icon && $service->icon !== 'assets/images/service-icon-default.png' && Storage::disk('public')->exists($service->icon)) {
-            Storage::disk('public')->delete($service->icon);
+        DB::transaction(function () use ($service) {
+            $service->delete();
+
+            // Rapikan urutan layanan yang tersisa agar tidak ada gap (0, 1, 2, ...)
+            $services = Service::orderBy('order', 'asc')->get();
+            foreach ($services as $index => $srv) {
+                if ($srv->order !== $index) {
+                    $srv->update(['order' => $index]);
+                }
+            }
+        });
+
+        if ($iconPath && $iconPath !== 'assets/images/service-icon-default.png' && Storage::disk('public')->exists($iconPath)) {
+            Storage::disk('public')->delete($iconPath);
         }
-
-        $service->delete();
 
         ActivityLog::record('delete', 'Layanan', "Menghapus layanan: {$title}");
 

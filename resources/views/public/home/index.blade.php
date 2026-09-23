@@ -8,27 +8,133 @@
     .hero-slider-section {
         position: relative;
         overflow: hidden;
+        width: 100%;
     }
     .hero-slide-item {
         position: relative;
-        height: 540px;
+        min-height: 540px;
+        height: auto;
+        padding: 60px 0 70px 0;
         background-size: cover;
         background-position: center;
         display: flex;
         align-items: center;
-    }
-    @media (max-width: 768px) {
-        .hero-slide-item { height: 380px; }
+        box-sizing: border-box;
     }
     .hero-overlay {
         position: absolute;
         top: 0; left: 0; right: 0; bottom: 0;
         background: linear-gradient(135deg, rgba(0, 42, 92, 0.88) 0%, rgba(0, 119, 182, 0.72) 100%);
+        z-index: 1;
     }
     .hero-content {
         position: relative;
         z-index: 2;
         color: white;
+        width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    /* Hero Typography & Elements */
+    .hero-content h1 {
+        font-size: 2.75rem !important;
+        line-height: 1.2 !important;
+        letter-spacing: -0.02em;
+        word-break: break-word;
+    }
+
+    .hero-content .lead {
+        font-size: 1.25rem !important;
+        line-height: 1.55;
+        max-width: 600px;
+    }
+
+    .hero-slider-section .swiper-pagination {
+        bottom: 16px !important;
+        z-index: 3;
+    }
+
+    /* Tablet (768px – 1199px) */
+    @media (max-width: 1199.98px) and (min-width: 768px) {
+        .hero-slide-item {
+            min-height: 480px;
+            padding: 50px 0 65px 0;
+        }
+        .hero-content h1 {
+            font-size: 2.25rem !important;
+            line-height: 1.25 !important;
+        }
+        .hero-content .lead {
+            font-size: 1.1rem !important;
+            line-height: 1.5;
+            margin-bottom: 1.25rem !important;
+        }
+    }
+
+    /* Mobile (<768px) */
+    @media (max-width: 767.98px) {
+        .hero-slide-item {
+            min-height: 440px;
+            height: auto;
+            padding: 44px 0 56px 0;
+        }
+        .hero-content h1 {
+            font-size: 1.625rem !important;
+            line-height: 1.3 !important;
+            margin-bottom: 0.85rem !important;
+            word-break: break-word;
+        }
+        .hero-content .lead {
+            font-size: 0.95rem !important;
+            line-height: 1.5 !important;
+            margin-bottom: 1.25rem !important;
+            max-width: 100% !important;
+        }
+        .hero-content .badge {
+            font-size: 0.7rem !important;
+            padding: 0.35rem 0.75rem !important;
+            margin-bottom: 0.75rem !important;
+        }
+        .hero-content .d-flex.gap-3 {
+            gap: 0.75rem !important;
+        }
+        .hero-content .btn-lg {
+            padding: 0.65rem 1.25rem !important;
+            font-size: 0.9rem !important;
+        }
+    }
+
+    /* Small Mobile (<480px) */
+    @media (max-width: 479.98px) {
+        .hero-slide-item {
+            min-height: 420px;
+            height: auto;
+            padding: 36px 0 52px 0;
+        }
+        .hero-content h1 {
+            font-size: 1.375rem !important;
+            line-height: 1.35 !important;
+            margin-bottom: 0.75rem !important;
+        }
+        .hero-content .lead {
+            font-size: 0.875rem !important;
+            line-height: 1.45 !important;
+            margin-bottom: 1rem !important;
+        }
+        .hero-content .d-flex.gap-3 {
+            flex-direction: column !important;
+            align-items: stretch !important;
+            width: 100% !important;
+            gap: 0.625rem !important;
+        }
+        .hero-content .btn {
+            width: 100% !important;
+            text-align: center !important;
+            justify-content: center !important;
+            font-size: 0.875rem !important;
+            padding: 0.6rem 1rem !important;
+        }
     }
 
     /* Stats Card */
@@ -122,7 +228,7 @@
     <div class="swiper heroSwiper">
         <div class="swiper-wrapper">
             @forelse($banners as $banner)
-                <div class="swiper-slide hero-slide-item" style="background-image: url('{{ asset('storage/' . $banner->image) }}');">
+                <div class="swiper-slide hero-slide-item" style="background-image: url('{{ $banner->image_url }}');">
                     <div class="hero-overlay"></div>
                     <div class="container hero-content py-4">
                         <div class="row">
@@ -137,12 +243,35 @@
                                     {{ \App\Models\Setting::get('tagline', 'Kabupaten Banyumas') }}
                                 </p>
                                 <div class="d-flex gap-3 flex-wrap align-items-center">
-                                    <a href="{{ route('service.index') }}" class="btn btn-gold btn-lg shadow-lg">
-                                        <i class="bi bi-grid-fill me-2"></i> Lihat Layanan Publik
-                                    </a>
-                                    <a href="{{ route('profile') }}" class="btn btn-outline-light btn-lg fw-bold px-4 rounded-pill">
-                                        <i class="bi bi-info-circle me-2"></i> Profil Dinas
-                                    </a>
+                                    @if($banner->target_url)
+                                        @if($banner->link_type === 'berita')
+                                            <a href="{{ $banner->target_url }}" class="btn btn-gold btn-lg shadow-lg">
+                                                <i class="bi bi-newspaper me-2"></i> Baca Berita
+                                            </a>
+                                        @elseif($banner->link_type === 'pelayanan')
+                                            <a href="{{ $banner->target_url }}" class="btn btn-gold btn-lg shadow-lg">
+                                                <i class="bi bi-grid-fill me-2"></i> Buka Layanan
+                                            </a>
+                                        @elseif($banner->link_type === 'external')
+                                            <a href="{{ $banner->target_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-lg shadow-lg">
+                                                <i class="bi bi-box-arrow-up-right me-2"></i> Kunjungi Tautan
+                                            </a>
+                                        @else
+                                            <a href="{{ $banner->target_url }}" class="btn btn-gold btn-lg shadow-lg">
+                                                <i class="bi bi-arrow-right-circle-fill me-2"></i> Lihat Detail
+                                            </a>
+                                        @endif
+                                        <a href="{{ route('profile') }}" class="btn btn-outline-light btn-lg fw-bold px-4 rounded-pill">
+                                            <i class="bi bi-info-circle me-2"></i> Profil Dinas
+                                        </a>
+                                    @else
+                                        <a href="{{ route('service.index') }}" class="btn btn-gold btn-lg shadow-lg">
+                                            <i class="bi bi-grid-fill me-2"></i> Lihat Layanan Publik
+                                        </a>
+                                        <a href="{{ route('profile') }}" class="btn btn-outline-light btn-lg fw-bold px-4 rounded-pill">
+                                            <i class="bi bi-info-circle me-2"></i> Profil Dinas
+                                        </a>
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -274,18 +403,18 @@
                             <div class="service-icon-box flex-shrink-0">
                                 <i class="bi bi-diagram-3-fill"></i>
                             </div>
-                            <div>
+                            <div class="min-w-0 flex-grow-1">
                                 <span class="badge bg-light text-primary border small rounded-pill px-2.5 py-1 mb-1">
                                     {{ $category->services->count() }} Layanan
                                 </span>
-                                <h5 class="fw-bold text-primary-dark mb-0 fs-6" style="font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1.4;">
+                                <h5 class="fw-bold text-primary-dark mb-0 fs-6 text-break-word" style="font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1.4;">
                                     {{ $category->name }}
                                 </h5>
                             </div>
                         </div>
 
                         @if($category->description)
-                            <p class="text-muted small mb-3" style="line-height: 1.55;">
+                            <p class="text-muted small mb-3 text-break-word" style="line-height: 1.55;">
                                 {{ Str::limit(strip_tags($category->description), 90) }}
                             </p>
                         @endif
@@ -297,7 +426,7 @@
                                     <li>
                                         <a href="{{ route('service.show', $service->slug) }}" class="text-dark text-decoration-none d-flex align-items-start gap-2 hover-primary transition-all">
                                             <i class="bi bi-check2-circle text-primary small mt-1 flex-shrink-0"></i>
-                                            <span class="fw-medium lh-sm">{{ $service->title }}</span>
+                                            <span class="fw-medium lh-sm min-w-0 flex-grow-1 text-break-word">{{ $service->title }}</span>
                                         </a>
                                     </li>
                                 @empty
@@ -342,20 +471,59 @@
         <div class="row g-4">
             @forelse($latestPhotos as $photo)
                 <div class="col-lg-4 col-md-6">
-                    <div class="card-custom overflow-hidden position-relative h-100">
-                        <a href="{{ asset('storage/' . $photo->image) }}" class="glightbox" data-gallery="home-gallery" data-title="{{ strip_tags($photo->title) }}">
-                            <img src="{{ asset('storage/' . $photo->image) }}" alt="{{ $photo->title }}" class="w-100" style="aspect-ratio: 4/3; object-fit: cover;" onerror="this.src='https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80'">
-                        </a>
-                        <div class="p-3 bg-white">
-                            <h6 class="fw-bold mb-1 text-truncate">{{ strip_tags($photo->title) }}</h6>
-                            @if($photo->gallery_album_id)
-                                <a href="{{ route('gallery.photo.show', $photo->gallery_album_id) }}" class="text-muted text-decoration-none small hover-primary d-inline-flex align-items-center gap-1">
-                                    <i class="bi bi-folder-fill text-warning"></i><span>{{ $photo->album->name ?? 'Album Dinas' }}</span>
-                                </a>
-                            @else
-                                <small class="text-muted"><i class="bi bi-folder me-1"></i>Album Dinas</small>
-                            @endif
-                        </div>
+                    <div class="card-custom overflow-hidden position-relative h-100 d-flex flex-column">
+                        @if(($photo->source_type ?? 'upload') === 'instagram')
+                            <!-- Media Container 4:3 Instagram -->
+                            <a href="{{ $photo->external_url }}" target="_blank" rel="noopener noreferrer" class="text-decoration-none" title="Buka postingan di Instagram">
+                                <div class="news-thumb-wrapper position-relative" 
+                                     style="aspect-ratio: 4/3; overflow: hidden; background: linear-gradient(135deg, #405DE6 0%, #5851DB 25%, #833AB4 50%, #C13584 75%, #E1306C 100%);">
+                                    <div class="w-100 h-100 d-flex flex-column align-items-center justify-content-center p-3 text-white text-center position-relative">
+                                        <div class="rounded-circle d-flex align-items-center justify-content-center mb-2 shadow-sm" style="width: 48px; height: 48px; background: rgba(255,255,255,0.22); backdrop-filter: blur(6px); border: 2px solid rgba(255,255,255,0.4);">
+                                            <i class="bi bi-instagram fs-3 text-white"></i>
+                                        </div>
+                                        <span class="badge bg-white text-dark rounded-pill px-2.5 py-1 small fw-bold shadow-sm" style="font-size: 0.7rem;">
+                                            <i class="bi bi-instagram me-1 text-danger"></i>Postingan Instagram
+                                        </span>
+                                        <div class="position-absolute top-0 end-0 m-2">
+                                            <span class="btn btn-sm btn-dark bg-opacity-75 rounded-circle p-1" style="width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center;">
+                                                <i class="bi bi-box-arrow-up-right text-white small"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="p-3 bg-white d-flex flex-column justify-content-between flex-grow-1">
+                                <div>
+                                    <h6 class="fw-bold mb-1 text-truncate" title="{{ strip_tags($photo->title) }}">{{ strip_tags($photo->title) ?: 'Dokumentasi Instagram' }}</h6>
+                                    @if($photo->gallery_album_id)
+                                        <a href="{{ route('gallery.photo.show', $photo->gallery_album_id) }}" class="text-muted text-decoration-none small hover-primary d-inline-flex align-items-center gap-1">
+                                            <i class="bi bi-folder-fill text-warning"></i><span>{{ $photo->album->name ?? 'Album Dinas' }}</span>
+                                        </a>
+                                    @else
+                                        <small class="text-muted"><i class="bi bi-folder me-1"></i>Album Dinas</small>
+                                    @endif
+                                </div>
+                                <div class="mt-2 pt-1 border-top">
+                                    <a href="{{ $photo->external_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-danger rounded-pill w-100 py-1" style="font-size: 0.75rem;">
+                                        <i class="bi bi-instagram me-1"></i> Buka di Instagram
+                                    </a>
+                                </div>
+                            </div>
+                        @else
+                            <a href="{{ asset('storage/' . $photo->image) }}" class="glightbox" data-gallery="home-gallery" data-title="{{ strip_tags($photo->title) }}">
+                                <img src="{{ asset('storage/' . $photo->image) }}" alt="{{ $photo->title }}" class="w-100" style="aspect-ratio: 4/3; object-fit: cover;" onerror="this.src='https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80'">
+                            </a>
+                            <div class="p-3 bg-white">
+                                <h6 class="fw-bold mb-1 text-truncate">{{ strip_tags($photo->title) }}</h6>
+                                @if($photo->gallery_album_id)
+                                    <a href="{{ route('gallery.photo.show', $photo->gallery_album_id) }}" class="text-muted text-decoration-none small hover-primary d-inline-flex align-items-center gap-1">
+                                        <i class="bi bi-folder-fill text-warning"></i><span>{{ $photo->album->name ?? 'Album Dinas' }}</span>
+                                    </a>
+                                @else
+                                    <small class="text-muted"><i class="bi bi-folder me-1"></i>Album Dinas</small>
+                                @endif
+                            </div>
+                        @endif
                     </div>
                 </div>
             @empty

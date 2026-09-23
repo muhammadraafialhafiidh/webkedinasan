@@ -20,7 +20,12 @@ class BannerSeeder extends Seeder
                 ['order' => $banner['order']],
                 [
                     'title' => $banner['title'],
-                    'image' => 'assets/images/placeholder-banner.jpg',
+                    'link_type' => 'none',
+                    'news_id' => null,
+                    'service_id' => null,
+                    'external_url' => null,
+                    'image_source' => 'custom',
+                    'image' => null,
                     'link' => null,
                     'is_active' => true,
                 ]

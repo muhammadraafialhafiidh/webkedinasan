@@ -12,13 +12,13 @@
         <!-- Main Content (8 col) -->
         <div class="col-lg-8">
             <article class="bg-white p-4 p-md-5 rounded-4 border shadow-sm">
-                <div class="d-flex align-items-center gap-2.5 mb-3 flex-wrap">
+                <div class="d-flex align-items-center gap-3 mb-3 flex-wrap">
                     <span class="badge-ocean">{{ $news->newsCategory->name ?? 'Informasi' }}</span>
-                    <span class="text-muted small"><i class="bi bi-calendar3 me-1"></i>{{ $news->published_at ? $news->published_at->format('d F Y') : '' }}</span>
-                    <span class="text-muted small ms-auto"><i class="bi bi-eye me-1"></i>{{ number_format($news->views_count ?? 0, 0, ',', '.') }} Dilihat</span>
+                    <span class="text-muted small d-inline-flex align-items-center"><i class="bi bi-calendar3 me-2"></i>{{ $news->published_at ? $news->published_at->format('d F Y') : '' }}</span>
+                    <span class="text-muted small ms-auto d-inline-flex align-items-center"><i class="bi bi-eye me-2"></i>{{ number_format($news->views_count ?? 0, 0, ',', '.') }} Dilihat</span>
                 </div>
 
-                <h1 class="fw-bold text-primary-dark mb-4" style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.1rem; line-height: 1.3; letter-spacing: -0.02em;">
+                <h1 class="fw-bold text-primary-dark mb-4 text-break-word" style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.1rem; line-height: 1.3; letter-spacing: -0.02em;">
                     {{ $news->title }}
                 </h1>
 
@@ -34,15 +34,17 @@
                     {!! $news->content !!}
                 </div>
 
-                <hr class="my-4.5 opacity-25">
+                <hr class="my-4 opacity-25">
 
                 <!-- Social Share -->
-                <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
-                    <span class="fw-bold text-muted small"><i class="bi bi-share-fill me-1.5"></i>Bagikan berita ini:</span>
-                    <div class="d-flex gap-2">
-                        <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(url()->current()) }}" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3"><i class="bi bi-facebook me-1"></i>Facebook</a>
-                        <a href="https://twitter.com/intent/tweet?text={{ urlencode($news->title) }}&url={{ urlencode(url()->current()) }}" target="_blank" class="btn btn-sm btn-outline-dark rounded-pill px-3"><i class="bi bi-twitter-x me-1"></i>X</a>
-                        <a href="https://api.whatsapp.com/send?text={{ urlencode($news->title . ' - ' . url()->current()) }}" target="_blank" class="btn btn-sm btn-outline-success rounded-pill px-3"><i class="bi bi-whatsapp me-1"></i>WhatsApp</a>
+                <div>
+                    <div class="fw-bold text-muted small d-flex align-items-center mb-2">
+                        <i class="bi bi-share-fill me-2"></i>Bagikan berita ini:
+                    </div>
+                    <div class="d-flex align-items-center flex-wrap gap-2">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(url()->current()) }}" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3 d-inline-flex align-items-center"><i class="bi bi-facebook me-2"></i>Facebook</a>
+                        <a href="https://twitter.com/intent/tweet?text={{ urlencode($news->title) }}&url={{ urlencode(url()->current()) }}" target="_blank" class="btn btn-sm btn-outline-dark rounded-pill px-3 d-inline-flex align-items-center"><i class="bi bi-twitter-x me-2"></i>X</a>
+                        <a href="https://api.whatsapp.com/send?text={{ urlencode($news->title . ' - ' . url()->current()) }}" target="_blank" class="btn btn-sm btn-outline-success rounded-pill px-3 d-inline-flex align-items-center"><i class="bi bi-whatsapp me-2"></i>WhatsApp</a>
                     </div>
                 </div>
             </article>
@@ -58,11 +60,11 @@
                             <div class="col-md-6">
                                 <div class="card-custom h-100 p-3 d-flex flex-column position-relative">
                                     <div class="d-flex gap-3 align-items-start">
-                                        <img src="{{ asset('storage/' . $rel->thumbnail) }}" alt="{{ $rel->title }}" class="rounded-2" style="width: 80px; height: 60px; object-fit: cover;" onerror="this.src='https://images.unsplash.com/photo-1534951009808-766178b47a4f?auto=format&fit=crop&w=200&q=80'">
-                                        <div>
+                                        <img src="{{ asset('storage/' . $rel->thumbnail) }}" alt="{{ $rel->title }}" class="rounded-2 flex-shrink-0" style="width: 80px; height: 60px; object-fit: cover;" onerror="this.src='https://images.unsplash.com/photo-1534951009808-766178b47a4f?auto=format&fit=crop&w=200&q=80'">
+                                        <div class="min-w-0 flex-grow-1">
                                             <span class="badge bg-light text-primary border small mb-1">{{ $rel->newsCategory->name ?? '' }}</span>
                                             <h6 class="fw-bold mb-1 fs-6">
-                                                <a href="{{ route('news.show', $rel->slug) }}" class="text-dark text-decoration-none stretched-link">
+                                                <a href="{{ route('news.show', $rel->slug) }}" class="text-dark text-decoration-none stretched-link text-break-word">
                                                     {{ Str::limit($rel->title, 45) }}
                                                 </a>
                                             </h6>
@@ -81,7 +83,7 @@
         <div class="col-lg-4">
             <div class="card-custom p-4 mb-4">
                 <h5 class="fw-bold text-primary mb-3">Tentang Dinas</h5>
-                <p class="small text-muted mb-3 leading-relaxed">
+                <p class="small text-muted mb-3 leading-relaxed text-break-word">
                     {{ strip_tags(\App\Models\Setting::get('deskripsi')) }}
                 </p>
                 <a href="{{ route('profile') }}" class="btn btn-outline-primary btn-sm rounded-pill fw-bold w-100 py-2">

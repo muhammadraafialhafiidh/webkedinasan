@@ -45,23 +45,23 @@
     <div class="d-flex flex-column gap-3">
         @forelse($documents as $doc)
             <div class="card-custom p-4 d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
-                <div class="d-flex align-items-center gap-3">
-                    <a href="{{ asset('storage/' . $doc->file) }}" target="_blank" class="bg-danger bg-opacity-10 text-danger rounded-3 p-3 text-center text-decoration-none d-flex align-items-center justify-content-center" style="min-width: 58px; height: 58px;" title="Buka Dokumen PDF">
+                <div class="d-flex align-items-center gap-3 min-w-0 flex-grow-1">
+                    <a href="{{ asset('storage/' . $doc->file) }}" target="_blank" class="bg-danger bg-opacity-10 text-danger rounded-3 p-3 text-center text-decoration-none d-flex align-items-center justify-content-center flex-shrink-0" style="width: 58px; height: 58px;" title="Buka Dokumen PDF">
                         <i class="bi bi-file-earmark-pdf-fill fs-2"></i>
                     </a>
-                    <div>
+                    <div class="min-w-0 flex-grow-1">
                         <span class="badge-ocean mb-1 d-inline-block">{{ $doc->category }}</span>
-                        <h5 class="fw-bold text-primary-dark mb-1 fs-6" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                        <h5 class="fw-bold text-primary-dark mb-1 fs-6 text-break-word" style="font-family: 'Plus Jakarta Sans', sans-serif;">
                             <a href="{{ asset('storage/' . $doc->file) }}" target="_blank" class="text-dark text-decoration-none hover-primary">
                                 {{ $doc->title }} <i class="bi bi-box-arrow-up-right ms-1 text-primary small"></i>
                             </a>
                         </h5>
                         @if($doc->description)
-                            <p class="text-muted small mb-0 leading-relaxed">{{ strip_tags($doc->description) }}</p>
+                            <p class="text-muted small mb-0 leading-relaxed text-break-word">{{ strip_tags($doc->description) }}</p>
                         @endif
                     </div>
                 </div>
-                <div class="d-flex gap-2 text-md-end text-start flex-wrap">
+                <div class="d-flex gap-2 text-md-end text-start flex-wrap flex-shrink-0">
                     <a href="{{ asset('storage/' . $doc->file) }}" target="_blank" class="btn btn-primary rounded-pill btn-sm fw-bold px-3 py-2 shadow-sm">
                         <i class="bi bi-eye-fill me-1"></i> Buka / Lihat PDF
                     </a>

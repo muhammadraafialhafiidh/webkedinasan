@@ -14,7 +14,7 @@ class HomeController extends Controller
 {
     public function index(VisitorStatisticService $visitorStatisticService)
     {
-        $banners = Banner::active()->get();
+        $banners = Banner::with(['news', 'service'])->active()->get();
         $latestNews = News::with('newsCategory')->published()->orderBy('published_at', 'desc')->take(6)->get();
         $serviceCategories = ServiceCategory::with(['services' => function ($query) {
             $query->active()->orderBy('order', 'asc');

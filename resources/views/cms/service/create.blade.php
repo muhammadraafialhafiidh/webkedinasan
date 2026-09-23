@@ -33,7 +33,7 @@
 
                 <div class="mb-3">
                     <label for="description" class="form-label">Deskripsi Singkat Layanan <span class="text-danger">*</span></label>
-                    <textarea name="description" id="description" rows="3" class="form-control" placeholder="Penjelasan singkat mengenai tujuan dan manfaat layanan..." required>{{ old('description') }}</textarea>
+                    <textarea name="description" id="description" rows="3" class="form-control text-editor" placeholder="Penjelasan singkat mengenai tujuan dan manfaat layanan..." required>{{ old('description') }}</textarea>
                 </div>
 
                 <div class="mb-4">
@@ -104,11 +104,6 @@
                 <div class="mb-3">
                     <label for="product" class="form-label">Produk Pelayanan / Output</label>
                     <input type="text" name="product" id="product" class="form-control" value="{{ old('product') }}" placeholder="Contoh: Surat Rekomendasi / Sertifikat">
-                </div>
-
-                <div class="mb-3">
-                    <label for="order" class="form-label">Urutan Tampil</label>
-                    <input type="number" name="order" id="order" class="form-control" value="{{ old('order', 0) }}">
                 </div>
 
                 <div class="mb-4">

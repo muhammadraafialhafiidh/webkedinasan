@@ -13,7 +13,7 @@ class VisitorStatisticService
      */
     private function distinctVisitor()
     {
-        return DB::raw('DISTINCT COALESCE(session_id, ip_address)');
+        return DB::raw('id');
     }
 
     /**
@@ -56,7 +56,7 @@ class VisitorStatisticService
         $dailyChart = $this->getDailyChartData(30);
 
         // 3. Halaman Terpopuler (Perhitungan Seluruh Kunjungan Halaman Publik)
-        $popularPages = WebsiteVisitor::select('page_name', 'url', DB::raw('COUNT(*) as total_views'))
+        $popularPages = \App\Models\WebsiteVisitorPageview::select('page_name', 'url', DB::raw('COUNT(*) as total_views'))
             ->groupBy('page_name', 'url')
             ->orderByDesc('total_views')
             ->limit(10)
@@ -71,11 +71,16 @@ class VisitorStatisticService
         $totalDevice = array_sum($deviceBreakdown) ?: 1;
 
         // 5. Browser (Chrome, Edge, Firefox, Safari, Lainnya)
-        $browserList = ['Chrome', 'Edge', 'Firefox', 'Safari', 'Lainnya'];
+        $browserList = ['Chrome', 'Edge', 'Firefox', 'Safari'];
         $browserBreakdown = [];
+        
         foreach ($browserList as $b) {
             $browserBreakdown[$b] = WebsiteVisitor::where('browser', $b)->count($this->distinctVisitor());
         }
+        
+        // Semua sisanya (Brave, Opera, versi historis yang tak dikenali, dll) masuk "Lainnya"
+        $browserBreakdown['Lainnya'] = WebsiteVisitor::whereNotIn('browser', $browserList)->count($this->distinctVisitor());
+        
         $totalBrowser = array_sum($browserBreakdown) ?: 1;
 
         // 6. Grafik Kunjungan Per Jam Hari Ini (00:00 - 23:00)
@@ -98,7 +103,7 @@ class VisitorStatisticService
         $startDate = Carbon::today()->subDays($days - 1);
         $endDate = Carbon::today()->endOfDay();
 
-        $raw = WebsiteVisitor::select(DB::raw('DATE(visited_at) as date'), DB::raw('COUNT(DISTINCT COALESCE(session_id, ip_address)) as count'))
+        $raw = WebsiteVisitor::select(DB::raw('DATE(visited_at) as date'), DB::raw('COUNT(*) as count'))
             ->whereBetween('visited_at', [$startDate, $endDate])
             ->groupBy(DB::raw('DATE(visited_at)'))
             ->pluck('count', 'date')
@@ -131,7 +136,11 @@ class VisitorStatisticService
             ? 'CAST(strftime("%H", visited_at) AS INTEGER)'
             : 'HOUR(visited_at)';
 
-        $raw = WebsiteVisitor::select(DB::raw("{$hourExpression} as hour"), DB::raw('COUNT(DISTINCT COALESCE(session_id, ip_address)) as count'))
+        if ($driver === 'mysql') {
+            DB::statement("SET time_zone = '+07:00'");
+        }
+
+        $raw = WebsiteVisitor::select(DB::raw("{$hourExpression} as hour"), DB::raw('COUNT(*) as count'))
             ->whereBetween('visited_at', [$today, $tomorrow])
             ->groupBy(DB::raw($hourExpression))
             ->pluck('count', 'hour')

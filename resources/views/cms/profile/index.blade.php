@@ -8,6 +8,39 @@
 
 @section('content')
 
+<style>
+    .drag-handle {
+        cursor: grab;
+        user-select: none;
+        touch-action: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        transition: color 0.15s ease, background-color 0.15s ease;
+    }
+    .drag-handle:hover {
+        color: var(--primary, #003F88) !important;
+        background-color: rgba(0, 63, 136, 0.08);
+    }
+    .sortable-ghost {
+        opacity: 0.35;
+        background-color: #e0f2fe !important;
+        border: 2px dashed #0284c7 !important;
+    }
+    .sortable-chosen {
+        background-color: #ffffff !important;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+    }
+    .sortable-drag {
+        opacity: 0.95;
+        cursor: grabbing !important;
+    }
+    .sortable-drag .drag-handle {
+        cursor: grabbing !important;
+    }
+</style>
+
 <div class="d-flex justify-content-between align-items-center mb-4">
     <div>
         <h3 class="fw-bold text-primary mb-1">Pengaturan Profil Dinas</h3>
@@ -15,13 +48,13 @@
     </div>
 </div>
 
-<form action="{{ route('cms.profil.update') }}" method="POST">
-    @csrf
-    @method('PUT')
+<div class="row g-4">
+    <!-- Main Form (8 col) -->
+    <div class="col-lg-8">
+        <form action="{{ route('cms.profil.update') }}" method="POST">
+            @csrf
+            @method('PUT')
 
-    <div class="row g-4">
-        <!-- Main Form (8 col) -->
-        <div class="col-lg-8">
             <!-- Sejarah -->
             <div class="card border-0 shadow-sm p-4 mb-4">
                 <h5 class="fw-bold text-primary mb-3"><i class="bi bi-journal-text me-2"></i>Sejarah Singkat</h5>
@@ -51,46 +84,58 @@
                     <i class="bi bi-check2-circle me-1"></i> Simpan Perubahan Profil Dinas
                 </button>
             </div>
-        </div>
+        </form>
+    </div>
 
-        <!-- Sidebar Pejabat Organisasi (4 col) -->
-        <div class="col-lg-4">
-            <div class="card border-0 shadow-sm p-4 sticky-top" style="top: 80px;">
-                <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom">
+    <!-- Sidebar Pejabat Organisasi (4 col) -->
+    <div class="col-lg-4">
+        <div class="card border-0 shadow-sm p-4 sticky-top" style="top: 80px;">
+            <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom">
+                <div>
                     <h5 class="fw-bold text-primary mb-0"><i class="bi bi-people me-2"></i>Struktur Pejabat</h5>
-                    <button type="button" class="btn btn-sm btn-primary fw-bold" data-bs-toggle="modal" data-bs-target="#addMemberModal">
-                        <i class="bi bi-plus-lg me-1"></i> Tambah
-                    </button>
+                    <small class="text-muted" style="font-size: 0.72rem;"><i class="bi bi-arrows-move me-1"></i>Tarik & geser ikon untuk atur posisi</small>
                 </div>
+                <button type="button" class="btn btn-sm btn-primary fw-bold" data-bs-toggle="modal" data-bs-target="#addMemberModal">
+                    <i class="bi bi-plus-lg me-1"></i> Tambah
+                </button>
+            </div>
 
-                <div class="d-flex flex-column gap-3">
-                    @forelse($organizationMembers as $member)
-                        <div class="p-3 border rounded-3 bg-light d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center gap-3">
-                                <img src="{{ asset('storage/' . $member->photo) }}" alt="{{ $member->name }}" class="rounded-circle border" style="width: 48px; height: 48px; object-fit: cover;" onerror="this.src='https://ui-avatars.com/api/?name={{ urlencode($member->name) }}&background=003F88&color=ffffff'">
-                                <div>
-                                    <div class="fw-bold small text-dark mb-0">{{ $member->name }}</div>
-                                    <span class="badge bg-warning text-dark font-monospace" style="font-size: 0.7rem;">{{ $member->position }}</span>
-                                    <small class="d-block text-muted" style="font-size: 0.65rem;">Urutan: {{ $member->order }}</small>
-                                </div>
+            <div class="d-flex flex-column gap-2" id="sortableMemberList">
+                @forelse($organizationMembers as $member)
+                    <div class="p-3 border rounded-3 bg-light d-flex align-items-center justify-content-between sortable-member-item" data-id="{{ $member->id }}" style="transition: transform 0.15s ease, box-shadow 0.15s ease;">
+                        <div class="d-flex align-items-center gap-2 overflow-hidden me-2">
+                            <div class="drag-handle text-muted px-1 py-2 me-1" role="button" title="Geser untuk mengatur urutan">
+                                <i class="bi bi-grip-vertical fs-5"></i>
                             </div>
-                            <div class="btn-group btn-group-sm">
-                                <button type="button" class="btn btn-outline-secondary" onclick="editMember({{ $member->id }}, '{{ addslashes($member->name) }}', '{{ addslashes($member->position) }}', {{ $member->order }})"><i class="bi bi-pencil"></i></button>
-                                <form action="{{ route('cms.organisasi.destroy', $member->id) }}" method="POST" class="d-inline" onsubmit="return confirm('Hapus pejabat ini?')">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button type="submit" class="btn btn-outline-danger"><i class="bi bi-trash"></i></button>
-                                </form>
+                            <img src="{{ asset('storage/' . $member->photo) }}" alt="{{ $member->name }}" class="rounded-circle border flex-shrink-0" style="width: 44px; height: 44px; object-fit: cover;" onerror="this.src='https://ui-avatars.com/api/?name={{ urlencode($member->name) }}&background=003F88&color=ffffff'">
+                            <div class="overflow-hidden">
+                                <div class="fw-bold small text-dark text-truncate mb-0" title="{{ $member->name }}">{{ $member->name }}</div>
+                                <span class="badge bg-warning text-dark font-monospace text-truncate d-inline-block max-w-100" style="font-size: 0.7rem;">{{ $member->position }}</span>
                             </div>
                         </div>
-                    @empty
-                        <div class="text-center py-4 text-muted small">Belum ada pejabat terdaftar.</div>
-                    @endforelse
-                </div>
+                        <div class="btn-action-group d-flex align-items-center gap-1 flex-shrink-0">
+                            {{-- Edit Button --}}
+                            <button type="button" class="btn btn-action btn-action-edit" onclick="editMember({{ $member->id }}, '{{ addslashes($member->name) }}', '{{ addslashes($member->position) }}')" data-bs-toggle="tooltip" data-bs-title="Edit Data">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+
+                            {{-- Delete Button --}}
+                            <form action="{{ route('cms.organisasi.destroy', $member->id) }}" method="POST" class="d-inline" onsubmit="return confirm('Hapus pejabat ini?')">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-action btn-action-delete" data-bs-toggle="tooltip" data-bs-title="Hapus Data">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                @empty
+                    <div class="text-center py-4 text-muted small">Belum ada pejabat terdaftar.</div>
+                @endforelse
             </div>
         </div>
     </div>
-</form>
+</div>
 
 <!-- Modal Tambah Pejabat -->
 <div class="modal fade" id="addMemberModal" tabindex="-1">
@@ -113,10 +158,6 @@
                 <div class="mb-3">
                     <label for="photo" class="form-label">Foto Pejabat</label>
                     <input type="file" name="photo" id="photo" class="form-control" accept="image/*">
-                </div>
-                <div class="mb-3">
-                    <label for="order" class="form-label">Urutan Tampil</label>
-                    <input type="number" name="order" id="order" class="form-control" value="0">
                 </div>
             </div>
             <div class="modal-footer">
@@ -150,10 +191,6 @@
                     <label for="edit_photo" class="form-label">Ganti Foto (Opsional)</label>
                     <input type="file" name="photo" id="edit_photo" class="form-control" accept="image/*">
                 </div>
-                <div class="mb-3">
-                    <label for="edit_order" class="form-label">Urutan Tampil</label>
-                    <input type="number" name="order" id="edit_order" class="form-control">
-                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-light border" data-bs-dismiss="modal">Batal</button>
@@ -166,14 +203,74 @@
 @endsection
 
 @push('scripts')
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.2/Sortable.min.js"></script>
 <script>
-    function editMember(id, name, position, order) {
+    function editMember(id, name, position) {
         document.getElementById('edit_name').value = name;
         document.getElementById('edit_position').value = position;
-        document.getElementById('edit_order').value = order;
         document.getElementById('editMemberForm').action = "{{ url('/cms/organisasi') }}/" + id;
         const modal = new bootstrap.Modal(document.getElementById('editMemberModal'));
         modal.show();
     }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const listEl = document.getElementById('sortableMemberList');
+        if (!listEl) return;
+
+        let previousOrder = Array.from(listEl.querySelectorAll('.sortable-member-item')).map(el => el.dataset.id);
+
+        new Sortable(listEl, {
+            handle: '.drag-handle',
+            animation: 200,
+            ghostClass: 'sortable-ghost',
+            chosenClass: 'sortable-chosen',
+            dragClass: 'sortable-drag',
+            onStart: function () {
+                previousOrder = Array.from(listEl.querySelectorAll('.sortable-member-item')).map(el => el.dataset.id);
+            },
+            onEnd: function (evt) {
+                if (evt.oldIndex === evt.newIndex) return;
+
+                const currentOrder = Array.from(listEl.querySelectorAll('.sortable-member-item')).map(el => parseInt(el.dataset.id));
+
+                fetch("{{ route('cms.organisasi.reorder') }}", {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': '{{ csrf_token() }}',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({ order: currentOrder })
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.success) {
+                        if (window.showCmsToast) {
+                            window.showCmsToast('success', data.message || 'Urutan struktur pejabat berhasil diperbarui.');
+                        }
+                        previousOrder = currentOrder.map(String);
+                    } else {
+                        throw new Error(data.message || 'Gagal menyimpan urutan.');
+                    }
+                })
+                .catch(err => {
+                    console.error('Reorder error:', err);
+                    if (window.showCmsToast) {
+                        window.showCmsToast('danger', 'Urutan gagal diperbarui. Silakan coba lagi.');
+                    }
+                    // Restore previous DOM order
+                    previousOrder.forEach(id => {
+                        const item = listEl.querySelector(`.sortable-member-item[data-id="${id}"]`);
+                        if (item) listEl.appendChild(item);
+                    });
+                });
+            }
+        });
+    });
 </script>
 @endpush

@@ -84,9 +84,9 @@
                         Semua Kategori
                     </a>
                     @foreach($categories as $cat)
-                        <a href="{{ route('news.index', ['kategori' => $cat->slug]) }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-2.5 mt-1 {{ request('kategori') == $cat->slug ? 'active fw-bold bg-primary border-primary rounded-2 text-white' : 'border-0 rounded-2' }}">
-                            <span>{{ $cat->name }}</span>
-                            <span class="badge {{ request('kategori') == $cat->slug ? 'bg-white text-primary' : 'bg-light text-dark border' }} rounded-pill">{{ $cat->news_count }}</span>
+                        <a href="{{ route('news.index', ['kategori' => $cat->slug]) }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-2.5 mt-1 {{ request('kategori') == $cat->slug ? 'active fw-bold bg-primary border-primary rounded-2 text-white' : 'border-0 rounded-2' }} gap-2">
+                            <span class="min-w-0 flex-grow-1 text-break-word">{{ $cat->name }}</span>
+                            <span class="badge {{ request('kategori') == $cat->slug ? 'bg-white text-primary' : 'bg-light text-dark border' }} rounded-pill flex-shrink-0">{{ $cat->news_count }}</span>
                         </a>
                     @endforeach
                 </div>
@@ -98,10 +98,10 @@
                 <div class="d-flex flex-column gap-3">
                     @foreach($popularNews as $pop)
                         <div class="d-flex gap-3 align-items-start position-relative">
-                            <img src="{{ asset('storage/' . $pop->thumbnail) }}" alt="{{ $pop->title }}" class="rounded-2" style="width: 70px; height: 55px; object-fit: cover;" onerror="this.src='https://images.unsplash.com/photo-1534951009808-766178b47a4f?auto=format&fit=crop&w=150&q=80'">
-                            <div>
+                            <img src="{{ asset('storage/' . $pop->thumbnail) }}" alt="{{ $pop->title }}" class="rounded-2 flex-shrink-0" style="width: 70px; height: 55px; object-fit: cover;" onerror="this.src='https://images.unsplash.com/photo-1534951009808-766178b47a4f?auto=format&fit=crop&w=150&q=80'">
+                            <div class="min-w-0 flex-grow-1">
                                 <small class="text-muted d-block mb-1" style="font-size: 0.75rem;"><i class="bi bi-calendar3 me-1"></i>{{ $pop->published_at ? $pop->published_at->format('d M Y') : '' }}</small>
-                                <a href="{{ route('news.show', $pop->slug) }}" class="text-dark text-decoration-none fw-semibold small lh-sm stretched-link">
+                                <a href="{{ route('news.show', $pop->slug) }}" class="text-dark text-decoration-none fw-semibold small lh-sm stretched-link text-break-word">
                                     {{ Str::limit($pop->title, 45) }}
                                 </a>
                             </div>

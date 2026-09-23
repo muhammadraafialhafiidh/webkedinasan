@@ -1,0 +1,2431 @@
+{
+  "nodes": [
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/README.md",
+      "label": "README.md",
+      "type": "DOCUMENT",
+      "source_file": "D:/kampus/magang/program/coba/4/README.md"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/README.md#about-laravel",
+      "label": "About Laravel",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/README.md",
+      "source_location": "D:/kampus/magang/program/coba/4/README.md:10"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/README.md#learning-laravel",
+      "label": "Learning Laravel",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/README.md",
+      "source_location": "D:/kampus/magang/program/coba/4/README.md:24"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/README.md#laravel-sponsors",
+      "label": "Laravel Sponsors",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/README.md",
+      "source_location": "D:/kampus/magang/program/coba/4/README.md:30"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/README.md#premium-partners",
+      "label": "Premium Partners",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/README.md",
+      "source_location": "D:/kampus/magang/program/coba/4/README.md:34"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/README.md#contributing",
+      "label": "Contributing",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/README.md",
+      "source_location": "D:/kampus/magang/program/coba/4/README.md:45"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/README.md#code-of-conduct",
+      "label": "Code of Conduct",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/README.md",
+      "source_location": "D:/kampus/magang/program/coba/4/README.md:49"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/README.md#security-vulnerabilities",
+      "label": "Security Vulnerabilities",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/README.md",
+      "source_location": "D:/kampus/magang/program/coba/4/README.md:53"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/README.md#license",
+      "label": "License",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/README.md",
+      "source_location": "D:/kampus/magang/program/coba/4/README.md:57"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "label": "design.md",
+      "type": "DOCUMENT",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#design-guide-—-cms-portal-informasi-dinas-perikanan",
+      "label": "Design Guide — CMS Portal Informasi Dinas Perikanan",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:1"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#1.-filosofi-desain",
+      "label": "1. Filosofi Desain",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:3"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#2.-color-palette",
+      "label": "2. Color Palette",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:14"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#warna-utama",
+      "label": "Warna Utama",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:16"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#warna-netral",
+      "label": "Warna Netral",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:25"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#warna-status",
+      "label": "Warna Status",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:35"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#css-variables-(root)",
+      "label": "CSS Variables (root)",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:44"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#3.-tipografi",
+      "label": "3. Tipografi",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:75"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#font-family",
+      "label": "Font Family",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:77"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#skala-tipografi",
+      "label": "Skala Tipografi",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:95"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#4.-spacing-&-grid",
+      "label": "4. Spacing & Grid",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:109"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#sistem-spacing-(kelipatan-8px)",
+      "label": "Sistem Spacing (kelipatan 8px)",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:111"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#grid-publik",
+      "label": "Grid Publik",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:124"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#grid-cms",
+      "label": "Grid CMS",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:131"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#5.-komponen-ui",
+      "label": "5. Komponen UI",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:139"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#5.1-tombol-(button)",
+      "label": "5.1 Tombol (Button)",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:141"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#5.2-kartu-(card)",
+      "label": "5.2 Kartu (Card)",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:173"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#5.3-badge",
+      "label": "5.3 Badge",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:210"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#5.4-navbar-publik",
+      "label": "5.4 Navbar Publik",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:227"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#5.5-hero/slider-beranda",
+      "label": "5.5 Hero/Slider Beranda",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:243"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#5.6-footer-publik",
+      "label": "5.6 Footer Publik",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:251"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#5.7-sidebar-cms",
+      "label": "5.7 Sidebar CMS",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:260"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#5.8-topbar-cms",
+      "label": "5.8 Topbar CMS",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:298"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#5.9-tabel-data-cms",
+      "label": "5.9 Tabel Data CMS",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:305"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#5.10-form-cms",
+      "label": "5.10 Form CMS",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:335"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#6.-layout-halaman",
+      "label": "6. Layout Halaman",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:352"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#6.1-layout-publik-—-beranda",
+      "label": "6.1 Layout Publik — Beranda",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:354"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#6.2-layout-publik-—-daftar-berita",
+      "label": "6.2 Layout Publik — Daftar Berita",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:382"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#6.3-layout-publik-—-detail-berita",
+      "label": "6.3 Layout Publik — Detail Berita",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:404"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#6.4-layout-cms-—-dashboard",
+      "label": "6.4 Layout CMS — Dashboard",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:428"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#6.5-layout-cms-—-halaman-crud-(list)",
+      "label": "6.5 Layout CMS — Halaman CRUD (List)",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:448"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#6.6-layout-cms-—-form-tambah/edit",
+      "label": "6.6 Layout CMS — Form Tambah/Edit",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:467"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#7.-halaman-khusus",
+      "label": "7. Halaman Khusus",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:491"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#7.1-halaman-login-cms",
+      "label": "7.1 Halaman Login CMS",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:493"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#7.2-halaman-404",
+      "label": "7.2 Halaman 404",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:504"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#7.3-halaman-dokumen-&-download",
+      "label": "7.3 Halaman Dokumen & Download",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:511"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#8.-ikon-&-aset",
+      "label": "8. Ikon & Aset",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:519"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#9.-animasi-&-interaksi",
+      "label": "9. Animasi & Interaksi",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:528"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#10.-responsif",
+      "label": "10. Responsif",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:554"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#breakpoint-behavior",
+      "label": "Breakpoint Behavior",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:556"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/design.md#11.-panduan-penggunaan-bootstrap-5",
+      "label": "11. Panduan Penggunaan Bootstrap 5",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/design.md",
+      "source_location": "D:/kampus/magang/program/coba/4/design.md:571"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/public/robots.txt",
+      "label": "robots.txt",
+      "type": "DOCUMENT",
+      "source_file": "D:/kampus/magang/program/coba/4/public/robots.txt"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "label": "requirements.md",
+      "type": "DOCUMENT",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#requirements-—-cms-portal-informasi-dinas-perikanan",
+      "label": "Requirements — CMS Portal Informasi Dinas Perikanan",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:1"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#1.-gambaran-umum-proyek",
+      "label": "1. Gambaran Umum Proyek",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:3"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#1.1-tujuan-sistem",
+      "label": "1.1 Tujuan Sistem",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:12"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#2.-tech-stack",
+      "label": "2. Tech Stack",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:20"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#3.-hak-akses-&-role",
+      "label": "3. Hak Akses & Role",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:37"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#3.1-daftar-role",
+      "label": "3.1 Daftar Role",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:39"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#3.2-matriks-hak-akses",
+      "label": "3.2 Matriks Hak Akses",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:47"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#4.-kebutuhan-fungsional",
+      "label": "4. Kebutuhan Fungsional",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:69"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#4.1-halaman-publik",
+      "label": "4.1 Halaman Publik",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:71"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-01:-beranda",
+      "label": "F-PUB-01: Beranda",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:73"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-02:-profil-dinas",
+      "label": "F-PUB-02: Profil Dinas",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:81"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-03:-daftar-berita",
+      "label": "F-PUB-03: Daftar Berita",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:86"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-04:-detail-berita",
+      "label": "F-PUB-04: Detail Berita",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:93"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-05:-layanan",
+      "label": "F-PUB-05: Layanan",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:99"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-06:-detail-layanan",
+      "label": "F-PUB-06: Detail Layanan",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:106"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-07:-galeri-foto",
+      "label": "F-PUB-07: Galeri Foto",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:112"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-08:-galeri-video",
+      "label": "F-PUB-08: Galeri Video",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:117"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-09:-dokumen-&-download",
+      "label": "F-PUB-09: Dokumen & Download",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:122"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-10:-kontak",
+      "label": "F-PUB-10: Kontak",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:127"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#4.2-cms-—-autentikasi",
+      "label": "4.2 CMS — Autentikasi",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:135"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-auth-01:-login-cms",
+      "label": "F-AUTH-01: Login CMS",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:137"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-auth-02:-lupa-password",
+      "label": "F-AUTH-02: Lupa Password",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:144"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-auth-03:-logout",
+      "label": "F-AUTH-03: Logout",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:149"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#4.3-cms-—-dashboard",
+      "label": "4.3 CMS — Dashboard",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:154"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-01:-dashboard",
+      "label": "F-CMS-01: Dashboard",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:156"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#4.4-cms-—-manajemen-konten",
+      "label": "4.4 CMS — Manajemen Konten",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:165"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-02:-manajemen-berita",
+      "label": "F-CMS-02: Manajemen Berita",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:167"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-03:-manajemen-kategori-berita",
+      "label": "F-CMS-03: Manajemen Kategori Berita",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:176"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-04:-manajemen-kategori-layanan",
+      "label": "F-CMS-04: Manajemen Kategori Layanan",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:181"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-05:-manajemen-layanan",
+      "label": "F-CMS-05: Manajemen Layanan",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:188"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-06:-manajemen-galeri-foto",
+      "label": "F-CMS-06: Manajemen Galeri Foto",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:195"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-07:-manajemen-galeri-video",
+      "label": "F-CMS-07: Manajemen Galeri Video",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:201"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-08:-manajemen-dokumen",
+      "label": "F-CMS-08: Manajemen Dokumen",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:206"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-09:-manajemen-banner/slider",
+      "label": "F-CMS-09: Manajemen Banner/Slider",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:211"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-10:-manajemen-profil-dinas",
+      "label": "F-CMS-10: Manajemen Profil Dinas",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:216"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-11:-pesan-masuk-(kontak)",
+      "label": "F-CMS-11: Pesan Masuk (Kontak)",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:220"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#4.5-cms-—-super-admin-only",
+      "label": "4.5 CMS — Super Admin Only",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:229"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-spa-01:-manajemen-user",
+      "label": "F-SPA-01: Manajemen User",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:231"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-spa-02:-manajemen-role-&-hak-akses",
+      "label": "F-SPA-02: Manajemen Role & Hak Akses",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:238"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-spa-03:-pengaturan-website",
+      "label": "F-SPA-03: Pengaturan Website",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:243"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-spa-04:-log-aktivitas",
+      "label": "F-SPA-04: Log Aktivitas",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:257"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#5.-kebutuhan-non-fungsional",
+      "label": "5. Kebutuhan Non-Fungsional",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:266"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#6.-struktur-database",
+      "label": "6. Struktur Database",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:281"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`users`",
+      "label": "Tabel: `users`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:283"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`settings`",
+      "label": "Tabel: `settings`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:297"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`activity_logs`",
+      "label": "Tabel: `activity_logs`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:306"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`news_categories`",
+      "label": "Tabel: `news_categories`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:318"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`news`",
+      "label": "Tabel: `news`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:327"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`service_categories`",
+      "label": "Tabel: `service_categories`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:342"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`services`",
+      "label": "Tabel: `services`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:354"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`gallery_albums`",
+      "label": "Tabel: `gallery_albums`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:373"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`gallery_photos`",
+      "label": "Tabel: `gallery_photos`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:383"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`gallery_videos`",
+      "label": "Tabel: `gallery_videos`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:394"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`documents`",
+      "label": "Tabel: `documents`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:405"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`banners`",
+      "label": "Tabel: `banners`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:416"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`profile_contents`",
+      "label": "Tabel: `profile_contents`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:428"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`organization_members`",
+      "label": "Tabel: `organization_members`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:436"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`contacts`",
+      "label": "Tabel: `contacts`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:447"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#7.-routing",
+      "label": "7. Routing",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:464"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#7.1-public-routes-(web.php)",
+      "label": "7.1 Public Routes (web.php)",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:466"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#7.2-auth-routes",
+      "label": "7.2 Auth Routes",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:483"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#7.3-cms-routes-—-admin-&-super-admin-(prefix:-/cms)",
+      "label": "7.3 CMS Routes — Admin & Super Admin (prefix: /cms)",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:495"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#7.4-cms-routes-—-super-admin-only-(prefix:-/cms)",
+      "label": "7.4 CMS Routes — Super Admin Only (prefix: /cms)",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:562"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#8.-seeder-&-default-data",
+      "label": "8. Seeder & Default Data",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:583"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#urutan-pemanggilan-di-`databaseseeder`",
+      "label": "Urutan Pemanggilan di `DatabaseSeeder`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:587"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#`userseeder`",
+      "label": "`UserSeeder`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:612"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#`settingseeder`",
+      "label": "`SettingSeeder`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:624"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#`profilecontentseeder`",
+      "label": "`ProfileContentSeeder`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:651"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#`organizationmemberseeder`",
+      "label": "`OrganizationMemberSeeder`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:662"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#`newscategoryseeder`",
+      "label": "`NewsCategorySeeder`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:677"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#`newsseeder`",
+      "label": "`NewsSeeder`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:689"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#`servicecategoryseeder`",
+      "label": "`ServiceCategorySeeder`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:705"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#`serviceseeder`",
+      "label": "`ServiceSeeder`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:721"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#bidang-penganekaragaman-dan-keamanan-pangan",
+      "label": "Bidang Penganekaragaman dan Keamanan Pangan",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:727"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#bidang-ketersediaan-dan-stabilisasi-pangan",
+      "label": "Bidang Ketersediaan dan Stabilisasi Pangan",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:783"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#bidang-penanganan-kerawanan-pangan",
+      "label": "Bidang Penanganan Kerawanan Pangan",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:803"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#bidang-perikanan",
+      "label": "Bidang Perikanan",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:841"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#uptd-pbat",
+      "label": "UPTD PBAT",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:933"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#`galleryalbumseeder`",
+      "label": "`GalleryAlbumSeeder`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:953"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#`galleryphotoseeder`",
+      "label": "`GalleryPhotoSeeder`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:964"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#`galleryvideoseeder`",
+      "label": "`GalleryVideoSeeder`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:978"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#`documentseeder`",
+      "label": "`DocumentSeeder`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:990"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#`bannerseeder`",
+      "label": "`BannerSeeder`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:1005"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/requirements.md#`contactseeder`",
+      "label": "`ContactSeeder`",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/requirements.md",
+      "source_location": "D:/kampus/magang/program/coba/4/requirements.md:1017"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "label": "task.md",
+      "type": "DOCUMENT",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#task-plan-—-cms-portal-informasi-dinas-perikanan",
+      "label": "Task Plan — CMS Portal Informasi Dinas Perikanan",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:1"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#informasi-proyek",
+      "label": "Informasi Proyek",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:3"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#legenda-status",
+      "label": "Legenda Status",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:15"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#phase-1-—-project-setup-&-konfigurasi",
+      "label": "Phase 1 — Project Setup & Konfigurasi",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:25"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#1.1-inisialisasi-laravel",
+      "label": "1.1 Inisialisasi Laravel",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:27"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#1.2-struktur-folder",
+      "label": "1.2 Struktur Folder",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:38"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#1.3-aset-frontend",
+      "label": "1.3 Aset Frontend",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:48"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#phase-2-—-database-&-model",
+      "label": "Phase 2 — Database & Model",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:57"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#2.1-migration",
+      "label": "2.1 Migration",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:59"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#2.2-model-&-relasi",
+      "label": "2.2 Model & Relasi",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:78"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#2.3-seeder",
+      "label": "2.3 Seeder",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:96"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#phase-3-—-autentikasi-&-middleware",
+      "label": "Phase 3 — Autentikasi & Middleware",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:117"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#3.1-autentikasi-custom",
+      "label": "3.1 Autentikasi Custom",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:119"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#3.2-middleware",
+      "label": "3.2 Middleware",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:130"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#phase-4-—-halaman-publik",
+      "label": "Phase 4 — Halaman Publik",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:140"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#4.1-layout-publik",
+      "label": "4.1 Layout Publik",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:142"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#4.2-beranda",
+      "label": "4.2 Beranda",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:149"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#4.3-profil-dinas",
+      "label": "4.3 Profil Dinas",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:160"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#4.4-berita",
+      "label": "4.4 Berita",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:168"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#4.5-layanan",
+      "label": "4.5 Layanan",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:175"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#4.6-galeri",
+      "label": "4.6 Galeri",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:191"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#4.7-dokumen-&-download",
+      "label": "4.7 Dokumen & Download",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:200"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#4.8-kontak",
+      "label": "4.8 Kontak",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:206"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#phase-5-—-cms-admin-&-super-admin",
+      "label": "Phase 5 — CMS Admin & Super Admin",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:217"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#5.1-layout-cms",
+      "label": "5.1 Layout CMS",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:219"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#5.2-dashboard-cms",
+      "label": "5.2 Dashboard CMS",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:228"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#5.3-manajemen-berita",
+      "label": "5.3 Manajemen Berita",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:237"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#5.4-manajemen-kategori-berita",
+      "label": "5.4 Manajemen Kategori Berita",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:251"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#5.5-manajemen-kategori-layanan",
+      "label": "5.5 Manajemen Kategori Layanan",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:258"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#5.6-manajemen-layanan",
+      "label": "5.6 Manajemen Layanan",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:267"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#5.6-manajemen-galeri-foto",
+      "label": "5.6 Manajemen Galeri Foto",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:281"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#5.7-manajemen-galeri-video",
+      "label": "5.7 Manajemen Galeri Video",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:288"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#5.8-manajemen-dokumen",
+      "label": "5.8 Manajemen Dokumen",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:294"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#5.9-manajemen-banner",
+      "label": "5.9 Manajemen Banner",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:300"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#5.10-manajemen-profil-dinas",
+      "label": "5.10 Manajemen Profil Dinas",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:306"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#5.11-pesan-masuk",
+      "label": "5.11 Pesan Masuk",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:314"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#5.13-manajemen-user-(super-admin)",
+      "label": "5.13 Manajemen User (Super Admin)",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:321"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#5.14-manajemen-role-(super-admin)",
+      "label": "5.14 Manajemen Role (Super Admin)",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:332"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#5.15-pengaturan-website-(super-admin)",
+      "label": "5.15 Pengaturan Website (Super Admin)",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:337"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#5.16-log-aktivitas-(super-admin)",
+      "label": "5.16 Log Aktivitas (Super Admin)",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:344"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#phase-6-—-testing,-polish-&-deployment",
+      "label": "Phase 6 — Testing, Polish & Deployment",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:353"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#6.1-testing-fungsional",
+      "label": "6.1 Testing Fungsional",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:355"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#6.2-keamanan",
+      "label": "6.2 Keamanan",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:368"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#6.3-polish-ui",
+      "label": "6.3 Polish UI",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:377"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#6.4-optimasi",
+      "label": "6.4 Optimasi",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:387"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#6.5-deployment-checklist",
+      "label": "6.5 Deployment Checklist",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:394"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#ringkasan-task-per-fase",
+      "label": "Ringkasan Task per Fase",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:410"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#prioritas-fitur",
+      "label": "Prioritas Fitur",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:424"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#must-have-(wajib-ada)",
+      "label": "Must Have (wajib ada)",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:426"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#should-have-(penting)",
+      "label": "Should Have (penting)",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:434"
+    },
+    {
+      "id": "doc:D:/kampus/magang/program/coba/4/task.md#nice-to-have-(tambahan)",
+      "label": "Nice to Have (tambahan)",
+      "type": "SECTION",
+      "source_file": "D:/kampus/magang/program/coba/4/task.md",
+      "source_location": "D:/kampus/magang/program/coba/4/task.md:442"
+    }
+  ],
+  "edges": [
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/README.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/README.md#about-laravel",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/README.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/README.md#learning-laravel",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/README.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/README.md#laravel-sponsors",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/README.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/README.md#premium-partners",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/README.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/README.md#contributing",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/README.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/README.md#code-of-conduct",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/README.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/README.md#security-vulnerabilities",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/README.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/README.md#license",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#design-guide-—-cms-portal-informasi-dinas-perikanan",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#1.-filosofi-desain",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#2.-color-palette",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#warna-utama",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#warna-netral",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#warna-status",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#css-variables-(root)",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#3.-tipografi",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#font-family",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#skala-tipografi",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#4.-spacing-&-grid",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#sistem-spacing-(kelipatan-8px)",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#grid-publik",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#grid-cms",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#5.-komponen-ui",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#5.1-tombol-(button)",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#5.2-kartu-(card)",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#5.3-badge",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#5.4-navbar-publik",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#5.5-hero/slider-beranda",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#5.6-footer-publik",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#5.7-sidebar-cms",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#5.8-topbar-cms",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#5.9-tabel-data-cms",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#5.10-form-cms",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#6.-layout-halaman",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#6.1-layout-publik-—-beranda",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#6.2-layout-publik-—-daftar-berita",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#6.3-layout-publik-—-detail-berita",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#6.4-layout-cms-—-dashboard",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#6.5-layout-cms-—-halaman-crud-(list)",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#6.6-layout-cms-—-form-tambah/edit",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#7.-halaman-khusus",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#7.1-halaman-login-cms",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#7.2-halaman-404",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#7.3-halaman-dokumen-&-download",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#8.-ikon-&-aset",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#9.-animasi-&-interaksi",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#10.-responsif",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#breakpoint-behavior",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/design.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/design.md#11.-panduan-penggunaan-bootstrap-5",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#requirements-—-cms-portal-informasi-dinas-perikanan",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#1.-gambaran-umum-proyek",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#1.1-tujuan-sistem",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#2.-tech-stack",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#3.-hak-akses-&-role",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#3.1-daftar-role",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#3.2-matriks-hak-akses",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#4.-kebutuhan-fungsional",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#4.1-halaman-publik",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-01:-beranda",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-02:-profil-dinas",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-03:-daftar-berita",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-04:-detail-berita",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-05:-layanan",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-06:-detail-layanan",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-07:-galeri-foto",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-08:-galeri-video",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-09:-dokumen-&-download",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-pub-10:-kontak",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#4.2-cms-—-autentikasi",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-auth-01:-login-cms",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-auth-02:-lupa-password",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-auth-03:-logout",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#4.3-cms-—-dashboard",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-01:-dashboard",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#4.4-cms-—-manajemen-konten",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-02:-manajemen-berita",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-03:-manajemen-kategori-berita",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-04:-manajemen-kategori-layanan",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-05:-manajemen-layanan",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-06:-manajemen-galeri-foto",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-07:-manajemen-galeri-video",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-08:-manajemen-dokumen",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-09:-manajemen-banner/slider",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-10:-manajemen-profil-dinas",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-cms-11:-pesan-masuk-(kontak)",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#4.5-cms-—-super-admin-only",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-spa-01:-manajemen-user",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-spa-02:-manajemen-role-&-hak-akses",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-spa-03:-pengaturan-website",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#f-spa-04:-log-aktivitas",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#5.-kebutuhan-non-fungsional",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#6.-struktur-database",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`users`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`settings`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`activity_logs`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`news_categories`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`news`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`service_categories`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`services`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`gallery_albums`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`gallery_photos`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`gallery_videos`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`documents`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`banners`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`profile_contents`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`organization_members`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#tabel:-`contacts`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#7.-routing",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#7.1-public-routes-(web.php)",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#7.2-auth-routes",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#7.3-cms-routes-—-admin-&-super-admin-(prefix:-/cms)",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#7.4-cms-routes-—-super-admin-only-(prefix:-/cms)",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#8.-seeder-&-default-data",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#urutan-pemanggilan-di-`databaseseeder`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#`userseeder`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#`settingseeder`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#`profilecontentseeder`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#`organizationmemberseeder`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#`newscategoryseeder`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#`newsseeder`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#`servicecategoryseeder`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#`serviceseeder`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#bidang-penganekaragaman-dan-keamanan-pangan",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#bidang-ketersediaan-dan-stabilisasi-pangan",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#bidang-penanganan-kerawanan-pangan",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#bidang-perikanan",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#uptd-pbat",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#`galleryalbumseeder`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#`galleryphotoseeder`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#`galleryvideoseeder`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#`documentseeder`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#`bannerseeder`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/requirements.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/requirements.md#`contactseeder`",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#task-plan-—-cms-portal-informasi-dinas-perikanan",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#informasi-proyek",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#legenda-status",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#phase-1-—-project-setup-&-konfigurasi",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#1.1-inisialisasi-laravel",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#1.2-struktur-folder",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#1.3-aset-frontend",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#phase-2-—-database-&-model",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#2.1-migration",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#2.2-model-&-relasi",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#2.3-seeder",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#phase-3-—-autentikasi-&-middleware",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#3.1-autentikasi-custom",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#3.2-middleware",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#phase-4-—-halaman-publik",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#4.1-layout-publik",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#4.2-beranda",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#4.3-profil-dinas",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#4.4-berita",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#4.5-layanan",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#4.6-galeri",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#4.7-dokumen-&-download",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#4.8-kontak",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#phase-5-—-cms-admin-&-super-admin",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#5.1-layout-cms",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#5.2-dashboard-cms",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#5.3-manajemen-berita",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#5.4-manajemen-kategori-berita",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#5.5-manajemen-kategori-layanan",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#5.6-manajemen-layanan",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#5.6-manajemen-galeri-foto",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#5.7-manajemen-galeri-video",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#5.8-manajemen-dokumen",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#5.9-manajemen-banner",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#5.10-manajemen-profil-dinas",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#5.11-pesan-masuk",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#5.13-manajemen-user-(super-admin)",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#5.14-manajemen-role-(super-admin)",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#5.15-pengaturan-website-(super-admin)",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#5.16-log-aktivitas-(super-admin)",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#phase-6-—-testing,-polish-&-deployment",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#6.1-testing-fungsional",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#6.2-keamanan",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#6.3-polish-ui",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#6.4-optimasi",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#6.5-deployment-checklist",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#ringkasan-task-per-fase",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#prioritas-fitur",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#must-have-(wajib-ada)",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#should-have-(penting)",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    },
+    {
+      "source": "doc:D:/kampus/magang/program/coba/4/task.md",
+      "target": "doc:D:/kampus/magang/program/coba/4/task.md#nice-to-have-(tambahan)",
+      "relation": "CONTAINS",
+      "kind": "EXTRACTED"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

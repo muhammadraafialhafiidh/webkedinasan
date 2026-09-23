@@ -81,6 +81,11 @@ class CmsAlbumController extends Controller
             Storage::disk('public')->delete($album->cover);
         }
 
+        $albumDirectory = "gallery/album-{$id}";
+        if (Storage::disk('public')->exists($albumDirectory)) {
+            Storage::disk('public')->deleteDirectory($albumDirectory);
+        }
+
         $album->delete();
 
         ActivityLog::record('delete', 'Galeri Album', "Menghapus album foto beserta aksinya: {$name}");

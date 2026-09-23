@@ -12,7 +12,7 @@
 <div class="d-flex justify-content-between align-items-center mb-4">
     <div>
         <h3 class="fw-bold text-primary mb-1">Manajemen Bidang / Kategori Layanan</h3>
-        <p class="text-muted small mb-0">Kelola 5 bidang/kategori pelayanan publik di Dinas Ketahanan Pangan dan Perikanan</p>
+        <p class="text-muted small mb-0">Kelola bidang/kategori pelayanan publik di Dinas Ketahanan Pangan dan Perikanan</p>
     </div>
     <button class="btn btn-primary font-bold shadow-sm" data-bs-toggle="modal" data-bs-target="#addModal">
         <i class="bi bi-plus-circle me-1"></i> Tambah Bidang Layanan
@@ -24,7 +24,6 @@
         <table class="table table-hover table-cms mb-0">
             <thead>
                 <tr>
-                    <th style="width: 60px;">Urutan</th>
                     <th>Nama Bidang / Kategori</th>
                     <th>Deskripsi Singkat</th>
                     <th>Jumlah Layanan</th>
@@ -34,18 +33,17 @@
             <tbody>
                 @forelse($categories as $cat)
                     <tr>
-                        <td class="fw-bold text-center">{{ $cat->order }}</td>
                         <td>
                             <div class="fw-bold text-primary">{{ $cat->name }}</div>
                             <small class="text-muted font-monospace" style="font-size: 0.75rem;">/layanan?kategori={{ $cat->slug }}</small>
                         </td>
-                        <td class="small text-muted" style="max-width: 350px;">{{ Str::limit($cat->description, 100) }}</td>
+                        <td class="small text-muted" style="max-width: 350px;">{{ Str::limit(trim(preg_replace('/\s+/', ' ', strip_tags(str_replace(['</p>', '<br>', '<br/>', '<br />', '</li>', '</div>', '</h1>', '</h2>', '</h3>', '</h4>', '</h5>', '</h6>', '</script>'], ' ', $cat->description ?? '')))), 100) ?: '-' }}</td>
                         <td>
                             <span class="badge bg-light text-dark border">{{ $cat->services_count }} Layanan</span>
                         </td>
                         <td class="text-center">
                             <div class="btn-action-group">
-                                <button type="button" class="btn btn-action btn-action-edit" onclick="editCategory({{ $cat->id }}, '{{ addslashes($cat->name) }}', '{{ addslashes($cat->description) }}', {{ $cat->order }})" data-bs-toggle="tooltip" data-bs-title="Edit Data">
+                                <button type="button" class="btn btn-action btn-action-edit" onclick="editCategory({{ $cat->id }}, '{{ addslashes($cat->name) }}', '{{ addslashes($cat->description ?? '') }}')" data-bs-toggle="tooltip" data-bs-title="Edit Data">
                                     <i class="bi bi-pencil"></i>
                                 </button>
                                 <form action="{{ route('cms.kategori-layanan.destroy', $cat->id) }}" method="POST" class="d-inline" onsubmit="return confirm('Hapus bidang layanan ini?')">
@@ -59,7 +57,7 @@
                         </td>
                     </tr>
                 @empty
-                    <tr><td colspan="5" class="text-center py-4 text-muted">Belum ada kategori layanan.</td></tr>
+                    <tr><td colspan="4" class="text-center py-4 text-muted">Belum ada kategori layanan.</td></tr>
                 @endforelse
             </tbody>
         </table>
@@ -83,10 +81,6 @@
                 <div class="mb-3">
                     <label for="add_desc" class="form-label">Deskripsi Singkat</label>
                     <textarea name="description" id="add_desc" rows="3" class="form-control" placeholder="Penjelasan bidang layanan..."></textarea>
-                </div>
-                <div class="mb-3">
-                    <label for="add_order" class="form-label">Urutan Tampil</label>
-                    <input type="number" name="order" id="add_order" class="form-control" value="0">
                 </div>
             </div>
             <div class="modal-footer">
@@ -116,10 +110,6 @@
                     <label for="edit_desc" class="form-label">Deskripsi Singkat</label>
                     <textarea name="description" id="edit_desc" rows="3" class="form-control"></textarea>
                 </div>
-                <div class="mb-3">
-                    <label for="edit_order" class="form-label">Urutan Tampil</label>
-                    <input type="number" name="order" id="edit_order" class="form-control">
-                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-light border" data-bs-dismiss="modal">Batal</button>
@@ -133,10 +123,9 @@
 
 @push('scripts')
 <script>
-    function editCategory(id, name, desc, order) {
+    function editCategory(id, name, desc) {
         document.getElementById('edit_name').value = name;
         window.setEditorData('edit_desc', desc);
-        document.getElementById('edit_order').value = order;
         document.getElementById('editForm').action = "{{ url('/cms/kategori-layanan') }}/" + id;
         const editModal = new bootstrap.Modal(document.getElementById('editModal'));
         editModal.show();

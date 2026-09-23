@@ -58,4 +58,13 @@ class Service extends Model
     {
         return $query->where('is_active', true);
     }
+
+    /**
+     * Sanitasi deskripsi HTML dari CKEditor agar aman ditampilkan di halaman publik.
+     */
+    public function getSafeDescriptionAttribute(): string
+    {
+        return \App\Services\HtmlSanitizer::clean($this->description);
+    }
 }
+

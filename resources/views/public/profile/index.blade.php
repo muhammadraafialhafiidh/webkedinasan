@@ -14,28 +14,30 @@
     </div>
 
     <!-- Navigation Tabs -->
-    <ul class="nav nav-pills nav-justified mb-4 border p-2 bg-white rounded-pill shadow-sm flex-wrap gap-1" id="profileTabs" role="tablist">
-        <li class="nav-item" role="presentation">
-            <button class="nav-link active rounded-pill fw-bold py-2.5 px-3" id="sejarah-tab" data-bs-toggle="pill" data-bs-target="#sejarah" type="button" role="tab">
-                <i class="bi bi-hourglass-split me-1.5 text-warning"></i> Sejarah Dinas
-            </button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link rounded-pill fw-bold py-2.5 px-3" id="visimisi-tab" data-bs-toggle="pill" data-bs-target="#visimisi" type="button" role="tab">
-                <i class="bi bi-compass me-1.5 text-ocean"></i> Visi & Misi
-            </button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link rounded-pill fw-bold py-2.5 px-3" id="tupoksi-tab" data-bs-toggle="pill" data-bs-target="#tupoksi" type="button" role="tab">
-                <i class="bi bi-file-earmark-text me-1.5 text-info"></i> Tupoksi
-            </button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link rounded-pill fw-bold py-2.5 px-3" id="struktur-tab" data-bs-toggle="pill" data-bs-target="#struktur" type="button" role="tab">
-                <i class="bi bi-diagram-3 me-1.5 text-success"></i> Struktur Organisasi
-            </button>
-        </li>
-    </ul>
+    <div class="overflow-x-auto pb-2 mb-4">
+        <ul class="nav nav-pills nav-justified border p-2 bg-white rounded-pill shadow-sm flex-nowrap flex-md-wrap gap-1 min-w-max" id="profileTabs" role="tablist" style="min-width: max-content;">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active rounded-pill fw-bold py-2.5 px-3 whitespace-nowrap" id="sejarah-tab" data-bs-toggle="pill" data-bs-target="#sejarah" type="button" role="tab">
+                    <i class="bi bi-hourglass-split me-1.5 text-warning"></i> Sejarah Dinas
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-pill fw-bold py-2.5 px-3 whitespace-nowrap" id="visimisi-tab" data-bs-toggle="pill" data-bs-target="#visimisi" type="button" role="tab">
+                    <i class="bi bi-compass me-1.5 text-ocean"></i> Visi & Misi
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-pill fw-bold py-2.5 px-3 whitespace-nowrap" id="tupoksi-tab" data-bs-toggle="pill" data-bs-target="#tupoksi" type="button" role="tab">
+                    <i class="bi bi-file-earmark-text me-1.5 text-info"></i> Tupoksi
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-pill fw-bold py-2.5 px-3 whitespace-nowrap" id="struktur-tab" data-bs-toggle="pill" data-bs-target="#struktur" type="button" role="tab">
+                    <i class="bi bi-diagram-3 me-1.5 text-success"></i> Struktur Organisasi
+                </button>
+            </li>
+        </ul>
+    </div>
 
     <!-- Tab Content -->
     <div class="tab-content bg-white p-4 p-md-5 rounded-4 shadow-sm border" id="profileTabsContent">
@@ -52,7 +54,7 @@
             <div class="mb-5">
                 <h3 class="fw-bold text-primary-dark mb-3 pb-2 border-bottom" style="font-family: 'Plus Jakarta Sans', sans-serif;"><i class="bi bi-eye me-2 text-ocean"></i>Visi Dinas</h3>
                 <div class="p-4 rounded-4 border-start border-4 border-warning" style="background-color: var(--light-blue);">
-                    <p class="fst-italic fs-5 fw-bold text-dark mb-0" style="line-height: 1.6;">
+                    <p class="fst-italic fs-5 fw-bold text-dark mb-0 text-break-word" style="line-height: 1.6;">
                         "{{ strip_tags($visi) }}"
                     </p>
                 </div>
@@ -84,8 +86,8 @@
                             <div class="mb-3">
                                 <img src="{{ asset('storage/' . $member->photo) }}" alt="{{ $member->name }}" class="rounded-circle shadow-sm border p-1" style="width: 120px; height: 120px; object-fit: cover;" onerror="this.src='https://ui-avatars.com/api/?name={{ urlencode($member->name) }}&background=003F88&color=ffffff'">
                             </div>
-                            <h5 class="fw-bold mb-1 text-primary-dark fs-6">{{ $member->name }}</h5>
-                            <span class="badge bg-warning bg-opacity-20 text-dark fw-bold px-3 py-1.5 rounded-pill mb-2" style="font-size: 0.8rem; border: 1px solid rgba(244, 161, 0, 0.4);">
+                            <h5 class="fw-bold mb-1 text-primary-dark fs-6 text-break-word">{{ $member->name }}</h5>
+                            <span class="badge bg-warning bg-opacity-20 text-dark fw-bold px-3 py-1.5 rounded-pill mb-2 text-break-word" style="font-size: 0.8rem; border: 1px solid rgba(244, 161, 0, 0.4); max-width: 100%;">
                                 {{ $member->position }}
                             </span>
                         </div>

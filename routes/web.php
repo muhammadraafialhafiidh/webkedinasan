@@ -139,6 +139,7 @@ Route::prefix('cms')->middleware(['cms.auth'])->group(function () {
     Route::delete('/galeri/album/{id}', [CmsAlbumController::class, 'destroy'])->name('cms.galeri.album.destroy');
     Route::get('/galeri/foto/{albumId}', [CmsPhotoController::class, 'showAlbumPhotos'])->name('cms.galeri.foto.index');
     Route::post('/galeri/foto/{albumId}', [CmsPhotoController::class, 'store'])->name('cms.galeri.foto.store');
+    Route::put('/galeri/foto/{id}', [CmsPhotoController::class, 'update'])->name('cms.galeri.foto.update');
     Route::delete('/galeri/foto/{id}', [CmsPhotoController::class, 'destroy'])->name('cms.galeri.foto.destroy');
 
     // Galeri Video
@@ -167,11 +168,13 @@ Route::prefix('cms')->middleware(['cms.auth'])->group(function () {
     // Struktur Organisasi
     Route::get('/organisasi', [CmsOrganizationController::class, 'index'])->name('cms.organisasi.index');
     Route::post('/organisasi', [CmsOrganizationController::class, 'store'])->name('cms.organisasi.store');
+    Route::post('/organisasi/reorder', [CmsOrganizationController::class, 'reorder'])->name('cms.organisasi.reorder');
     Route::put('/organisasi/{id}', [CmsOrganizationController::class, 'update'])->name('cms.organisasi.update');
     Route::delete('/organisasi/{id}', [CmsOrganizationController::class, 'destroy'])->name('cms.organisasi.destroy');
 
     // Alias untuk profil.organisasi (compatibility)
     Route::post('/profil/organisasi', [CmsOrganizationController::class, 'store'])->name('cms.profil.organisasi.store');
+    Route::post('/profil/organisasi/reorder', [CmsOrganizationController::class, 'reorder'])->name('cms.profil.organisasi.reorder');
     Route::put('/profil/organisasi/{id}', [CmsOrganizationController::class, 'update'])->name('cms.profil.organisasi.update');
     Route::delete('/profil/organisasi/{id}', [CmsOrganizationController::class, 'destroy'])->name('cms.profil.organisasi.destroy');
 

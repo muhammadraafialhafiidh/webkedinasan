@@ -47,7 +47,6 @@
         <table class="table table-hover table-cms mb-0">
             <thead>
                 <tr>
-                    <th style="width: 60px;">Urutan</th>
                     <th>Nama Layanan</th>
                     <th>Bidang / Kategori</th>
                     <th>Jangka Waktu</th>
@@ -59,7 +58,6 @@
             <tbody>
                 @forelse($services as $srv)
                     <tr>
-                        <td class="fw-bold text-center">{{ $srv->order }}</td>
                         <td>
                             <a href="{{ route('cms.layanan.edit', $srv->id) }}" class="fw-bold text-dark text-decoration-none">
                                 {{ $srv->title }}
@@ -96,7 +94,7 @@
                         </td>
                     </tr>
                 @empty
-                    <tr><td colspan="7" class="text-center py-4 text-muted">Belum ada layanan ditemukan.</td></tr>
+                    <tr><td colspan="6" class="text-center py-4 text-muted">Belum ada layanan ditemukan.</td></tr>
                 @endforelse
             </tbody>
         </table>

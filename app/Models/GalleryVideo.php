@@ -34,13 +34,15 @@ class GalleryVideo extends Model
      */
     public function getInstagramEmbedUrlAttribute(): ?string
     {
-        if (preg_match('/instagram\.com\/(?:p|reel|tv)\/([A-Za-z0-9_-]+)/', $this->url ?? '', $matches)) {
-            return 'https://www.instagram.com/p/' . $matches[1] . '/embed';
-        }
-        if (!empty($this->url)) {
-            return rtrim($this->url, '/') . '/embed';
-        }
-        return null;
+        return \App\Services\MediaSourceService::getInstagramEmbedUrl($this->url);
+    }
+
+    /**
+     * Helper URL embed Google Drive
+     */
+    public function getGoogleDriveEmbedUrlAttribute(): ?string
+    {
+        return \App\Services\MediaSourceService::getGoogleDriveEmbedUrl($this->url);
     }
 
     /**
